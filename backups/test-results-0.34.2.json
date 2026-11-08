@@ -1,0 +1,548 @@
+[
+  {
+    "file": "assessments.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Avaliação em lote idempotente e pesos manuais preservados.\n(node:154600) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "attention-retrieval.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: recuperação contextual, não invenção e conversa integrada\n(node:56368) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "chat-input-history-v0303.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Histórico de entrada v0.30.3: OK\n"
+  },
+  {
+    "file": "chat-order-v0294.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: ordenação nos dois sentidos, grupos de perguntas/respostas, timestamps e preferência SQLite v11\n(node:71672) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "chat-turn-layout-v03011.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: cartões de interação, pergunta antes da resposta, ordenação, data/hora e texto seguro\n"
+  },
+  {
+    "file": "chat.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: contexto, histórico e aprovação pendente\n(node:64016) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "claim-confidence.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: classificações qualitativas e valores apenas no trace técnico\n(node:53904) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "comparative-ranking-v03014.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.14: comparações, limites, fonte/período, contexto, filtros territoriais e outros domínios OK\n(node:74028) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "comparison-followup.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: respostas naturais, métricas do catálogo, escopo PE, repetição após falha e bloqueio de contexto antigo/ambíguo.\n(node:160636) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "comparison-scope-context.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: sequência da imagem, lacuna de dados mantém foco, três resultados, sigla, troca de estado e encerramento por nova pergunta.\n(node:163536) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "context-classification-v02912.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: marcador discursivo, mudança de entidade, classificação no SQLite e ausência de inferência negativa\n(node:34564) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "context-general-v0306.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.6: contexto multiaatributo, entidades explícitas, sons e limite dos dados OK\n(node:24888) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "context-topic-v02911.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: troca de assunto, definição elíptica, sem bebida absurda e sem duplicidade de cor\n(node:92044) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "contextual-classifications-v0302.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.2: classificação contextual, precedência, ausência de dados e template editável OK\n(node:165704) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversation-semantic-context-v0299.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "contextual ranking 0.29.9 OK\n(node:93308) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversation-semantic-context.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "semantic context OK\n(node:135696) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversational-learning-multistate-v0308.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.8: locais multivocabulares, revisão, aprovação e recuperação independente OK\n(node:134016) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversational-learning-v0307.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.7: extração multirrelação, aprovação, edição, proveniência, conflito e 5 consultas bidirecionais OK\n(node:137332) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversational-teachings.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: ensino, pendência, repetição, aprovação, resposta e persistência\n(node:167360) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversational-templates-v0300.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: migração v12, identidade, versões, tópicos, edição e persistência de templates\n(node:94500) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "dialogue-choice.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "pergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\nOK, por PIB, vai => Aqui estão as cidades do Brasil que conheço, por PIB:\n1. Recife — R$ 100\nEstou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Não sei de quando são algumas dessas medidas.\npergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\nok, vamos de PIB => Aqui estão as cidades do Brasil que conheço, por PIB:\n1. Recife — R$ 100\nEstou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Não sei de quando são algumas dessas medidas.\npergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\nsei lá, pode ser por qualquer um dos 3 => Como você deixou a escolha comigo, vou comparar por população.\n\nAqui estão as cidades do Brasil que conheço, por população:\n1. Recife — 1.500 habitantes\nEstou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Não sei de quando são algumas dessas medidas.\npergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\na segunda opção => Recife é a 2ª maior em área entre as cidades que conheço, com 200 km². Estou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Isso não significa que seja realmente a maior cidade de todo o Brasil. Não sei de quando são algumas dessas medidas.\npergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\nsem preferência, você escolhe => Como você deixou a escolha comigo, vou comparar por população.\n\nAqui estão as cidades do Brasil que conheço, por população:\n1. Recife — 1.500 habitantes\nEstou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Não sei de quando são algumas dessas medidas.\nOK: opções genéricas, PIB, delegação transparente e posição ordinal.\n(node:149880) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "dialogue-focus-v03010.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.10: contexto por turno, clubes/cidades, cores, títulos, ranking ambíguo, SQLite templates OK\n(node:156428) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "ellipsis-v0282.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: pergunta relacional, elipse, qualificações, troca de assunto\n(node:76808) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "entity-identity.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: upgrade real, aliases, evidências e pesos preservados, SQL direto, ambiguidade, bandeira distinta e idempotência.\n(node:99732) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "entity-teaching.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: quatro fatos, aprovação antiga, bloqueio de pronome, consultas separadas e prevenção de vazamento para vaca.\n(node:119288) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "examples-ui.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: botões de consultar e incorporar têm ações registradas\n"
+  },
+  {
+    "file": "flag-colors.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: cores de bandeira recuperadas do grafo no chat\n(node:16552) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "flexible-learning.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: existência de capital, frases gerais, aprovação e persistência\n(node:56688) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "focus-filters.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: filtros efetivos por capitais e região, sem incluir cidades fora do recorte.\n(node:164992) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "football-facts-v03013.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.13: tipos de dados, consultas, fontes e exclusões geográficas OK\n(node:84780) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "football-research-v03018.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Clubes de referência para começar a comparação:\nPernambuco: Sport, Náutico, Santa Cruz\nEsta seleção é uma referência editorial por estado, não um ranking que combine torcida, títulos e finanças. Para indicar o maior, qual critério você quer usar: tamanho da torcida, valuation, títulos de uma competição específica, receita ou patrimônio líquido?\nOK: 117 clubes, 27 UFs, exemplos, períodos, lacunas, importação aditiva e idempotência.\n{\n  profiles: 117,\n  facts: 528,\n  inserted: 528,\n  coverage: {\n    ufs: 27,\n    clubs: 117,\n    titles: 116,\n    supporters: 22,\n    revenue: 30,\n    equity: 30,\n    historical_records: 261,\n    debt: 22,\n    valuation: 28\n  }\n}\n(node:92616) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "generative.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: treinamento neural, loss, geração, probabilidades e checkpoint\n(node:59916) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "generic-semantic.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "generic semantic OK\n(node:104204) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "geographic-hierarchy-v03012.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.12: inferência UF/cidade/país, exclusões, preservação e templates OK\n(node:112884) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "geographic-qualified-entity.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: qualificadores, entidades concorrentes, troca de estado e evidencias restritas a Pernambuco.\n(node:97604) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "graph-inference.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: inferencia por relacoes, pesos, sem inventar ou gravar conclusoes\n(node:169428) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "implicit-ranking-v03019.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "qual a maior torcida em pernambuco? => Considerando tamanho da torcida (2026), este é o maior clube de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQual é a maior torcida de Pernambuco? => Considerando tamanho da torcida (2026), este é o maior clube de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQual a maior torcida no estado de Pernambuco? => Considerando tamanho da torcida (2026), este é o maior clube de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQuem tem a maior torcida em PE? => Considerando tamanho da torcida (2026), este é o maior clube de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQuais são as maiores torcidas em Pernambuco? => Considerando tamanho da torcida (2026), estes são os 3 maiores clubes de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQuais os 2 clubes com maior torcida em Pernambuco? => Considerando tamanho da torcida (2026), estes são os 2 maiores clubes de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nOK: domínio implícito, pergunta singular/plural, limite, estado/sigla e continuidade do critério.\n(node:48180) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "import-topics-v0282.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: importação simulada, idempotente e pesos preservados\n(node:180556) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "imported-chat-v0282.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: 27 capitais, pergunta → elipse e bandeira após importação real em banco temporário\n(node:134120) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "inspector-navigation.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Navegação do inspetor validada.\n"
+  },
+  {
+    "file": "language-engine.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "language engine OK\n(node:74712) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "learning-recovery.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Recuperação: histórico, isolamento, deduplicação, rejeição, aprovação e exclusão de falas da IA OK.\n(node:160524) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "legacy-neural-import.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: migração legada uma vez, preserva JSON e histórico SQLite\n(node:12844) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "lexical-equivalence-v0309.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.9: equivalências SQL, abreviações, perguntas contextuais, classes gerais, distinção de ranking e personalização OK\n(node:25412) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "limb-learning.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Aprendizado e consulta de quantidades: OK\n(node:167716) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "location-inference.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: localização positiva sem peso, sem inventar negativa\n(node:139108) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "message-input.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Teste do campo de mensagem: OK\n"
+  },
+  {
+    "file": "migrations.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: atualização incremental, rollback integral, repetição e preservação dos dados.\n(node:51364) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "municipal-lookup-v02910.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "municipal lookup 0.29.10 OK\n(node:51968) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "natural-descriptions.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: descrição natural por relações reais, sem pesos inventados\n(node:133584) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "negation-chat.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: negacao, nota coloquial, resposta e compatibilidade legada\n(node:53156) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "neural-examples.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: exemplos individualizados, vinculo, incorporacao e reabertura\n(node:168028) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "neural-inspection.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: embeddings, concatenação e logits do modelo real\n(node:102688) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "neural-intent.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Neural intent v0.27 OK\n(node:67824) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "numeric-rankings.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "numeric rankings OK\n(node:166956) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "property-query-v0301.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.1: consultas, herança explícita, ausência de dados e template editável OK\n(node:89604) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "reasoning-feedback-v0284.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: v0.28.4 feedback não é ensino, critério explícito e verificação de medidas do SQLite\n(node:27160) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "relations.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: migração v2, conversa, aprovação/rejeição, inferência transitiva, persistência\n(node:12124) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "self-awareness-v0298.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS self-awareness v0.29.8\n(node:90480) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "self-awareness.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: self-awareness and effective confidence\n(node:151336) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-catalog-v029.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: catálogo linguístico SQLite, edição sem JS, exemplos do zero e migração segura\n(node:152584) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-composition-chat-v0304.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.4: conversa completa e composição semântica OK\n(node:48984) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-composition-v0304.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.4: composição, consulta, ausência de fatos, templates editáveis e persistência OK\n(node:82412) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-core-v28.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: v0.28 múltiplas intenções, correção ortográfica, nomes, ambiguidades, continuidade, validação, SQLite\n(node:111172) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-entity-canonical-v0292.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: estado de Pernambuco reconhecido como Pernambuco; medidas preservadas\n(node:149636) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-followups-v281.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: v0.28.1 contexto após Extensão/População, mudança de estado e explicação\n(node:76976) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: variações semânticas, fatos existentes, desconhecido e inferência\n(node:168372) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "set-operations.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "set operations OK\n(node:176184) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "shared-focus-persistence.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: foco persiste ao reabrir, evidência explica resposta correta, isolamento entre conversas e fatos preservados.\n(node:50304) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "shared-focus.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: foco compartilhado, quantidade, ordem, propriedade, localidade, entidade, explicação, estatística e ausência de foco.\n(node:142044) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "smoke.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: treinamento, inferência e fluxo de 9 etapas\nOK: conhecimento explícito CRUD, import/export, resposta separada dos pesos\n"
+  },
+  {
+    "file": "sound-context-v0305.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.5: contexto animal, consulta de som, prioridade da entidade e templates OK\n(node:87036) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "sound-wording.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Cachorro late. Esse som pode ser representado por “au au”.\nGato mia. Esse som pode ser representado por “miau”.\nVaca muge. Esse som pode ser representado por “muuu”.\nOK: atualização do texto padrão, consultas, preservação dos fatos e das personalizações.\n(node:155844) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "spelling-clarification.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Sim A bandeira de Paraíba tem as cores vermelho.\nisto A bandeira de Paraíba tem as cores vermelho.\nisso A bandeira de Paraíba tem as cores vermelho.\nexatamente A bandeira de Paraíba tem as cores vermelho.\nha claro Paraíba, acabei escrevendo errado. A bandeira de Paraíba tem as cores vermelho.\nOK: erros, confirmações naturais, rejeição, mudança de assunto, sigla e preservação dos fatos.\n(node:58292) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "spelling-context.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: mesma grafia, contextos distintos, pergunta atual, propriedade, anáfora, empate, troca de assunto e confirmação sem aprender fatos.\n(node:134640) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "spelling-persistence.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: confirmação persiste após reabrir SQLite e histórico mantém a fala original.\n(node:143296) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "sqlite.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: SQLite, seed, CRUD, merge, treino, trace, reabertura\n(node:143776) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "statistics-v0293.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: v0.29.3 média, mediana, do meio, contexto, dados faltantes e limpeza do campo\n(node:24520) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "structured-teaching.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: ensino numerico -> pendencia -> aprovacao -> relacionamentos -> ranking\n(node:112280) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "teaching-audit-ui-v0283.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK v0.28.3: botão amarelo e revisão com auditoria e confirmação\n"
+  },
+  {
+    "file": "teaching-audit-v0283.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK v0.28.3: dupla validação, auditoria antiga, rejeição, confirmação manual e salvaguarda do SQLite\n(node:51612) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "teaching-intent-priority.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: saudações e novas perguntas não viram ensino; fatos explícitos são registrados\n(node:65068) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "teaching-list-context.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: lista numerada ensinada após convite e armazenada somente como pendência\n(node:34688) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "temporal.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: contextual calendar operations\n(node:149712) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "topic-summary-v02913.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: resumos por assunto do SQLite e contagem de entidades sem duplicidade\n(node:98440) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "train-intent-cli-v0291.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: prévia segura, migrations explícitas, --apply auto-migra e preserva conhecimentos\n(node:126092) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "ui-language.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Interface: mensagens amigáveis verificadas.\n"
+  },
+  {
+    "file": "weight-legacy-id.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: IDs SQL legados de 32 caracteres aceitos e peso persistido\n(node:144212) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "weighted.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: pesos, comparação de caminhos, JSON transacional e banco preservado\n(node:40224) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "word-generative.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: tokens por palavra, treino SGD, loss, geração e checkpoint\n(node:60360) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "wording-explanation.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: qualificativo em foco, evidência típica, outros termos, templates editáveis e nenhuma exceção/fato inventado.\n(node:133760) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  }
+]

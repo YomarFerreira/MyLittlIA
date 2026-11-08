@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {openDatabase} from '../server/persistence/database.js';
+import {createRelation} from '../server/knowledge/relations.js';
+import {sendChatMessage} from '../server/conversation/chat.js';
+import {spellingSuggestion} from '../server/conversation/spelling-clarification.js';
+const db=openDatabase(':memory:',{seed:false});
+try {
+ for(const [subject,object] of [['moto','veiculo'],['mato','planta'],['gato','animal'],['galo','animal'],['veiculo','entidade'],['planta','entidade'],['animal','entidade'],['sergipe','estado_brasileiro']])createRelation(db,{subject,predicate:'e_um',object});
+ db.prepare("INSERT INTO knowledge_relations(id,subject,predicate,object) VALUES ('speed','moto','velocidade_maxima_kmh','120')").run();
+ createRelation(db,{subject:'mato',predicate:'possui_cor',object:'verde'});
+ const count=db.prepare('SELECT COUNT(*) n FROM knowledge_relations').get().n;
+ const topic=text=>sendChatMessage(db,{text}).conversationId;
+ const vehicles=topic('O que é um veículo?'),plants=topic('O que é uma planta?');
+ let suggestion=spellingSuggestion(db,'O que é meto?',{conversationId:vehicles});assert.match(suggestion?.corrected??'',/moto/);assert.equal(suggestion.context.origin,'shared-focus');
+ suggestion=spellingSuggestion(db,'O que é meto?',{conversationId:plants});assert.match(suggestion?.corrected??'',/mato/);
+ assert.equal(spellingSuggestion(db,'O que é meto?'),null,'Sem contexto, o empate não pode ser escolhido');
+ suggestion=spellingSuggestion(db,'O que é meto entre plantas?',{conversationId:vehicles});assert.match(suggestion?.corrected??'',/mato/);assert.equal(suggestion.context.origin,'current-question');
+ suggestion=spellingSuggestion(db,'Qual a velocidade da meto?');assert.match(suggestion?.corrected??'',/moto/);assert.ok(suggestion.corrections.some(row=>row.evidence.includes('requested-property')));
+ const cat=topic('O que é um gato?'),rooster=topic('O que é um galo?');
+ assert.match(spellingSuggestion(db,'O que é gaxo?',{conversationId:cat})?.corrected??'',/gato/);
+ assert.match(spellingSuggestion(db,'O que é gaxo?',{conversationId:rooster})?.corrected??'',/galo/);
+ assert.match(spellingSuggestion(db,'E o gaxo?',{conversationId:cat})?.corrected??'',/gato/);
+ assert.match(spellingSuggestion(db,'Como saber se gaxo tem cor?',{conversationId:cat})?.corrected??'',/gato/,'se não é a sigla de Sergipe neste contexto');
+ assert.equal(spellingSuggestion(db,'O que é gaxo?'),null);
+ sendChatMessage(db,{conversationId:cat,text:'O que é uma planta?'});
+ assert.equal(spellingSuggestion(db,'O que é gaxo?',{conversationId:cat}),null,'Não buscar o gato em turnos antigos');
+ assert.equal(spellingSuggestion(db,'O que é meto, mudando de assunto?',{conversationId:vehicles}),null);
+ let reply=sendChatMessage(db,{conversationId:rooster,text:'O que é gaxo?'});assert.equal(reply.result.kind,'spelling-clarification');assert.match(reply.reply,/galo/);assert.equal(reply.result.interpretation.spellingContext.origin,'shared-focus');
+ reply=sendChatMessage(db,{conversationId:rooster,text:'Sim, exatamente'});assert.match(reply.reply,/galo/i);assert.equal(reply.result.clarification.confirmed,true);
+ assert.equal(db.prepare('SELECT COUNT(*) n FROM knowledge_relations').get().n,count);
+ console.log('OK: mesma grafia, contextos distintos, pergunta atual, propriedade, anáfora, empate, troca de assunto e confirmação sem aprender fatos.');
+}finally{db.close();}

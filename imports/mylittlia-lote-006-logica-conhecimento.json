@@ -1,0 +1,128 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "lot": "006",
+  "title": "Conceitos de conhecimento e raciocínio",
+  "compatible_with": "MylittlIA v0.29.8",
+  "relations": [
+    {
+      "subject": "Conhecimento",
+      "predicate": "e_um",
+      "object": "Informação organizada",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Inferência",
+      "predicate": "e_um",
+      "object": "Processo de raciocínio",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Hipótese",
+      "predicate": "e_um",
+      "object": "Explicação provisória",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Evidência",
+      "predicate": "e_um",
+      "object": "Informação de apoio",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Pergunta",
+      "predicate": "e_um",
+      "object": "Enunciado interrogativo",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Resposta",
+      "predicate": "e_um",
+      "object": "Enunciado de retorno",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "SQLite",
+      "predicate": "e_um",
+      "object": "Banco de dados relacional",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Cronologia",
+      "predicate": "e_um",
+      "object": "Ordenação temporal",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Segundo",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Minuto",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Mediana",
+      "predicate": "e_um",
+      "object": "Medida estatística",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Média aritmética",
+      "predicate": "e_um",
+      "object": "Medida estatística",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Mamífero",
+      "predicate": "e_um",
+      "object": "Vertebrado",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Ave",
+      "predicate": "e_um",
+      "object": "Vertebrado",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    },
+    {
+      "subject": "Hipótese",
+      "predicate": "tem",
+      "object": "Necessidade de verificação",
+      "category": "conceitos",
+      "source": "",
+      "note": "Relação conceitual introdutória, sem verificação documental individual."
+    }
+  ]
+}

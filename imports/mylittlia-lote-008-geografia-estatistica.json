@@ -1,0 +1,152 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "lot": "008",
+  "title": "Conceitos de geografia, população e rankings",
+  "compatible_with": "MylittlIA v0.29.9",
+  "relations": [
+    {
+      "subject": "População",
+      "predicate": "e_um",
+      "object": "Quantidade de habitantes",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Área territorial",
+      "predicate": "e_um",
+      "object": "Medida de superfície",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Quilômetro quadrado",
+      "predicate": "e_um",
+      "object": "Unidade de área",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Habitante",
+      "predicate": "e_um",
+      "object": "Pessoa residente",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Ranking",
+      "predicate": "e_um",
+      "object": "Classificação ordenada",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Classificação decrescente",
+      "predicate": "tem",
+      "object": "Valores maiores primeiro",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Classificação crescente",
+      "predicate": "tem",
+      "object": "Valores menores primeiro",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Comparação",
+      "predicate": "e_um",
+      "object": "Análise de diferenças",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Município",
+      "predicate": "e_um",
+      "object": "Divisão administrativa",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Estado federativo",
+      "predicate": "e_um",
+      "object": "Unidade da federação",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Ano de referência",
+      "predicate": "tem",
+      "object": "Período dos dados",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Fonte de dados",
+      "predicate": "tem",
+      "object": "Origem da informação",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Conjunto de dados",
+      "predicate": "possui",
+      "object": "Registros",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Medida numérica",
+      "predicate": "possui",
+      "object": "Valor",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "População estimada",
+      "predicate": "e_um",
+      "object": "Estimativa estatística",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Censo demográfico",
+      "predicate": "e_um",
+      "object": "Pesquisa populacional",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Densidade demográfica",
+      "predicate": "e_um",
+      "object": "Relação entre população e área",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    },
+    {
+      "subject": "Unidade de medida",
+      "predicate": "tem",
+      "object": "Grandeza associada",
+      "category": "geografia_estatistica",
+      "source": "",
+      "note": "Conceito introdutório; não representa medida municipal oficial ou atualizada."
+    }
+  ]
+}

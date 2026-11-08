@@ -1,0 +1,128 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "lot": "002",
+  "title": "Animais cidades bebidas e cores",
+  "compatible_with": "MylittlIA v0.29.3",
+  "relations": [
+    {
+      "subject": "Golfinho",
+      "predicate": "e_um",
+      "object": "Mamífero",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Tubarão",
+      "predicate": "e_um",
+      "object": "Peixe",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Pinguim",
+      "predicate": "e_um",
+      "object": "Ave",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Arara",
+      "predicate": "e_um",
+      "object": "Ave",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Arara",
+      "predicate": "possui",
+      "object": "Penas",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Baleia",
+      "predicate": "e_um",
+      "object": "Mamífero",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Olinda",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Localização municipal/estadual; conferir no IBGE quando necessária precisão."
+    },
+    {
+      "subject": "Petrolina",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Localização municipal/estadual; conferir no IBGE quando necessária precisão."
+    },
+    {
+      "subject": "Juazeiro",
+      "predicate": "localizado_em",
+      "object": "Bahia",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Localização municipal/estadual; conferir no IBGE quando necessária precisão."
+    },
+    {
+      "subject": "Santarém",
+      "predicate": "localizado_em",
+      "object": "Pará",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Localização municipal/estadual; conferir no IBGE quando necessária precisão."
+    },
+    {
+      "subject": "Café",
+      "predicate": "e_um",
+      "object": "Bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Chá",
+      "predicate": "e_um",
+      "object": "Bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Água",
+      "predicate": "e_um",
+      "object": "Bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Amarelo",
+      "predicate": "e_um",
+      "object": "Cor",
+      "category": "cores",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    },
+    {
+      "subject": "Roxo",
+      "predicate": "e_um",
+      "object": "Cor",
+      "category": "cores",
+      "source": "",
+      "note": "Classificação introdutória; a origem vazia exige revisão de evidências."
+    }
+  ]
+}

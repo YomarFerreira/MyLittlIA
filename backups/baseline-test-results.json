@@ -1,0 +1,77 @@
+[
+  {
+    "file": "chat.test.mjs",
+    "status": 1,
+    "output": "(node:89316) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\n  binding.unlink(getValidatedPath(path));\n          ^\n\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-chat-QSP5bO\\test.db'\n    at unlinkSync (node:fs:1953:11)\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\n    at rimrafSync (node:internal/fs/rimraf:196:7)\n    at node:internal/fs/rimraf:254:9\n    at Array.forEach (<anonymous>)\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\n    at rimrafSync (node:internal/fs/rimraf:194:7)\n    at rmSync (node:fs:1248:10)\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/chat.test.mjs:71:10\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-chat-QSP5bO\\\\test.db'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "context-general-v0306.test.mjs",
+    "status": 1,
+    "output": "(node:106528) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: The input did not match the regular expression /latido/i. Input:\n\n'Cachorro late. Esse som pode ser representado por “au au”.'\n\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/context-general-v0306.test.mjs:20:41\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 'Cachorro late. Esse som pode ser representado por “au au”.',\n  expected: /latido/i,\n  operator: 'match'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "conversation-semantic-context.test.mjs",
+    "status": 1,
+    "output": "(node:140828) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nfile:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/conversation-semantic-context.test.mjs:29\n assert.equal(only.result.interpretation.contextAfter.scope,'capitals');\n                                                      ^\n\nTypeError: Cannot read properties of undefined (reading 'scope')\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/conversation-semantic-context.test.mjs:29:55\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5)\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "generative.test.mjs",
+    "status": 1,
+    "output": "OK: treinamento neural, loss, geração, probabilidades e checkpoint\n(node:144052) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\n[Error: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-gen-lFLRln\\models.db'] {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-gen-lFLRln\\\\models.db'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "import-topics-v0282.test.mjs",
+    "status": 1,
+    "output": "(node:143208) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\nnull !== 0\n\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/import-topics-v0282.test.mjs:15:34\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: null,\n  expected: 0,\n  operator: 'strictEqual'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "neural-examples.test.mjs",
+    "status": 1,
+    "output": "(node:46644) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\n  binding.unlink(getValidatedPath(path));\n          ^\n\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-v014-SL6ck2\\mylittlia.db'\n    at unlinkSync (node:fs:1953:11)\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\n    at rimrafSync (node:internal/fs/rimraf:196:7)\n    at node:internal/fs/rimraf:254:9\n    at Array.forEach (<anonymous>)\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\n    at rimrafSync (node:internal/fs/rimraf:194:7)\n    at rmSync (node:fs:1248:10)\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/neural-examples.test.mjs:42:13\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-v014-SL6ck2\\\\mylittlia.db'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "relations.test.mjs",
+    "status": 1,
+    "output": "(node:73152) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\n  binding.unlink(getValidatedPath(path));\n          ^\n\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-relations-IiWFEs\\test.db'\n    at unlinkSync (node:fs:1953:11)\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\n    at rimrafSync (node:internal/fs/rimraf:196:7)\n    at node:internal/fs/rimraf:254:9\n    at Array.forEach (<anonymous>)\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\n    at rimrafSync (node:internal/fs/rimraf:194:7)\n    at rmSync (node:fs:1248:10)\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/relations.test.mjs:41:13\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-relations-IiWFEs\\\\test.db'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "self-awareness-v0298.test.mjs",
+    "status": 1,
+    "output": "(node:21260) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\n  binding.unlink(getValidatedPath(path));\n          ^\n\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-v0298-U14FPU\\db.sqlite'\n    at unlinkSync (node:fs:1953:11)\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\n    at rimrafSync (node:internal/fs/rimraf:196:7)\n    at node:internal/fs/rimraf:254:9\n    at Array.forEach (<anonymous>)\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\n    at rimrafSync (node:internal/fs/rimraf:194:7)\n    at rmSync (node:fs:1248:10)\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/self-awareness-v0298.test.mjs:24:12\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-v0298-U14FPU\\\\db.sqlite'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "semantic-catalog-v029.test.mjs",
+    "status": 1,
+    "output": "(node:74588) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\n  binding.unlink(getValidatedPath(path));\n          ^\n\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-v029-yToP06\\test.db'\n    at unlinkSync (node:fs:1953:11)\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\n    at rimrafSync (node:internal/fs/rimraf:196:7)\n    at node:internal/fs/rimraf:254:9\n    at Array.forEach (<anonymous>)\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\n    at rimrafSync (node:internal/fs/rimraf:194:7)\n    at rmSync (node:fs:1248:10)\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/semantic-catalog-v029.test.mjs:36:10\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-v029-yToP06\\\\test.db'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "semantic-core-v28.test.mjs",
+    "status": 1,
+    "output": "(node:114240) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n26 !== 11\n\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/semantic-core-v28.test.mjs:63:9\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 26,\n  expected: 11,\n  operator: 'strictEqual'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "sqlite.test.mjs",
+    "status": 1,
+    "output": "(node:150772) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\n  binding.unlink(getValidatedPath(path));\n          ^\n\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-sqlite-sIU9xy\\test.db'\n    at unlinkSync (node:fs:1953:11)\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\n    at rimrafSync (node:internal/fs/rimraf:196:7)\n    at node:internal/fs/rimraf:254:9\n    at Array.forEach (<anonymous>)\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\n    at rimrafSync (node:internal/fs/rimraf:194:7)\n    at rmSync (node:fs:1248:10)\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/sqlite.test.mjs:31:13\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-sqlite-sIU9xy\\\\test.db'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "teaching-audit-ui-v0283.test.mjs",
+    "status": 1,
+    "output": "node:fs:442\n    return binding.readFileUtf8(path, stringToFlags(options.flag));\n                   ^\n\nError: ENOENT: no such file or directory, open 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-baseline-hvt4unpe\\css\\styles.css'\n    at readFileSync (node:fs:442:20)\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/teaching-audit-ui-v0283.test.mjs:5:11\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  errno: -4058,\n  code: 'ENOENT',\n  syscall: 'open',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-baseline-hvt4unpe\\\\css\\\\styles.css'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "train-intent-cli-v0291.test.mjs",
+    "status": 1,
+    "output": "(node:23064) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: (node:171912) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nErro ao migrar o banco: duplicate column name: batch_id\n\n\n1 !== 0\n\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/train-intent-cli-v0291.test.mjs:31:10\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: false,\n  code: 'ERR_ASSERTION',\n  actual: 1,\n  expected: 0,\n  operator: 'strictEqual'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "weighted.test.mjs",
+    "status": 1,
+    "output": "(node:42052) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\n  binding.unlink(getValidatedPath(path));\n          ^\n\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-v09-3w9FjI\\mylittlia.db'\n    at unlinkSync (node:fs:1953:11)\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\n    at rimrafSync (node:internal/fs/rimraf:196:7)\n    at node:internal/fs/rimraf:254:9\n    at Array.forEach (<anonymous>)\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\n    at rimrafSync (node:internal/fs/rimraf:194:7)\n    at rmSync (node:fs:1248:10)\n    at file:///C:/Users/yomar/AppData/Local/Temp/mylittlia-baseline-hvt4unpe/tests/weighted.test.mjs:47:5\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-v09-3w9FjI\\\\mylittlia.db'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "word-generative.test.mjs",
+    "status": 1,
+    "output": "OK: tokens por palavra, treino SGD, loss, geração e checkpoint\n(node:75620) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\n[Error: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-word-vyQ5qq\\models.db'] {\n  errno: -4082,\n  code: 'EBUSY',\n  syscall: 'unlink',\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-word-vyQ5qq\\\\models.db'\n}\n\nNode.js v22.16.0\n"
+  }
+]

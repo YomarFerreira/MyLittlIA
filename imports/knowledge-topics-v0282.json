@@ -1,0 +1,1966 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "created_for": "MylittlIA v0.28.2",
+  "relations": [
+    {
+      "subject": "Acre",
+      "predicate": "localizado_em",
+      "object": "Norte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Acre",
+      "predicate": "tem_capital",
+      "object": "Rio Branco",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Rio Branco",
+      "predicate": "localizado_em",
+      "object": "Acre",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Amapá",
+      "predicate": "localizado_em",
+      "object": "Norte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Amapá",
+      "predicate": "tem_capital",
+      "object": "Macapá",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Macapá",
+      "predicate": "localizado_em",
+      "object": "Amapá",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Amazonas",
+      "predicate": "localizado_em",
+      "object": "Norte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Amazonas",
+      "predicate": "tem_capital",
+      "object": "Manaus",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Manaus",
+      "predicate": "localizado_em",
+      "object": "Amazonas",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Pará",
+      "predicate": "localizado_em",
+      "object": "Norte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Pará",
+      "predicate": "tem_capital",
+      "object": "Belém",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Belém",
+      "predicate": "localizado_em",
+      "object": "Pará",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Rondônia",
+      "predicate": "localizado_em",
+      "object": "Norte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Rondônia",
+      "predicate": "tem_capital",
+      "object": "Porto Velho",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Porto Velho",
+      "predicate": "localizado_em",
+      "object": "Rondônia",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Roraima",
+      "predicate": "localizado_em",
+      "object": "Norte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Roraima",
+      "predicate": "tem_capital",
+      "object": "Boa Vista",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Boa Vista",
+      "predicate": "localizado_em",
+      "object": "Roraima",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Tocantins",
+      "predicate": "localizado_em",
+      "object": "Norte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Tocantins",
+      "predicate": "tem_capital",
+      "object": "Palmas",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Palmas",
+      "predicate": "localizado_em",
+      "object": "Tocantins",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Alagoas",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Alagoas",
+      "predicate": "tem_capital",
+      "object": "Maceió",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Maceió",
+      "predicate": "localizado_em",
+      "object": "Alagoas",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Bahia",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Bahia",
+      "predicate": "tem_capital",
+      "object": "Salvador",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Salvador",
+      "predicate": "localizado_em",
+      "object": "Bahia",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Ceará",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Ceará",
+      "predicate": "tem_capital",
+      "object": "Fortaleza",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Fortaleza",
+      "predicate": "localizado_em",
+      "object": "Ceará",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Maranhão",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Maranhão",
+      "predicate": "tem_capital",
+      "object": "São Luís",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "São Luís",
+      "predicate": "localizado_em",
+      "object": "Maranhão",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Paraíba",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Paraíba",
+      "predicate": "tem_capital",
+      "object": "João Pessoa",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "João Pessoa",
+      "predicate": "localizado_em",
+      "object": "Paraíba",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Pernambuco",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Pernambuco",
+      "predicate": "tem_capital",
+      "object": "Recife",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Recife",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Piauí",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Piauí",
+      "predicate": "tem_capital",
+      "object": "Teresina",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Teresina",
+      "predicate": "localizado_em",
+      "object": "Piauí",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Rio Grande do Norte",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Rio Grande do Norte",
+      "predicate": "tem_capital",
+      "object": "Natal",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Natal",
+      "predicate": "localizado_em",
+      "object": "Rio Grande do Norte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Sergipe",
+      "predicate": "localizado_em",
+      "object": "Nordeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Sergipe",
+      "predicate": "tem_capital",
+      "object": "Aracaju",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Aracaju",
+      "predicate": "localizado_em",
+      "object": "Sergipe",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Espírito Santo",
+      "predicate": "localizado_em",
+      "object": "Sudeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Espírito Santo",
+      "predicate": "tem_capital",
+      "object": "Vitória",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Vitória",
+      "predicate": "localizado_em",
+      "object": "Espírito Santo",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Minas Gerais",
+      "predicate": "localizado_em",
+      "object": "Sudeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Minas Gerais",
+      "predicate": "tem_capital",
+      "object": "Belo Horizonte",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Belo Horizonte",
+      "predicate": "localizado_em",
+      "object": "Minas Gerais",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Rio de Janeiro",
+      "predicate": "localizado_em",
+      "object": "Sudeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Rio de Janeiro",
+      "predicate": "tem_capital",
+      "object": "Rio de Janeiro",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "São Paulo",
+      "predicate": "localizado_em",
+      "object": "Sudeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "São Paulo",
+      "predicate": "tem_capital",
+      "object": "São Paulo",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Paraná",
+      "predicate": "localizado_em",
+      "object": "Sul",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Paraná",
+      "predicate": "tem_capital",
+      "object": "Curitiba",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Curitiba",
+      "predicate": "localizado_em",
+      "object": "Paraná",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Rio Grande do Sul",
+      "predicate": "localizado_em",
+      "object": "Sul",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Rio Grande do Sul",
+      "predicate": "tem_capital",
+      "object": "Porto Alegre",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Porto Alegre",
+      "predicate": "localizado_em",
+      "object": "Rio Grande do Sul",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Santa Catarina",
+      "predicate": "localizado_em",
+      "object": "Sul",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Santa Catarina",
+      "predicate": "tem_capital",
+      "object": "Florianópolis",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Florianópolis",
+      "predicate": "localizado_em",
+      "object": "Santa Catarina",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Distrito Federal",
+      "predicate": "localizado_em",
+      "object": "Centro Oeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Distrito Federal",
+      "predicate": "tem_capital",
+      "object": "Brasília",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Brasília",
+      "predicate": "localizado_em",
+      "object": "Distrito Federal",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Goiás",
+      "predicate": "localizado_em",
+      "object": "Centro Oeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Goiás",
+      "predicate": "tem_capital",
+      "object": "Goiânia",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Goiânia",
+      "predicate": "localizado_em",
+      "object": "Goiás",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Mato Grosso",
+      "predicate": "localizado_em",
+      "object": "Centro Oeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Mato Grosso",
+      "predicate": "tem_capital",
+      "object": "Cuiabá",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Cuiabá",
+      "predicate": "localizado_em",
+      "object": "Mato Grosso",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Mato Grosso do Sul",
+      "predicate": "localizado_em",
+      "object": "Centro Oeste",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "Região da UF; não confundir com localização de município."
+    },
+    {
+      "subject": "Mato Grosso do Sul",
+      "predicate": "tem_capital",
+      "object": "Campo Grande",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "DF: Brasília é sede federal; representação didática como capital do DF."
+    },
+    {
+      "subject": "Campo Grande",
+      "predicate": "localizado_em",
+      "object": "Mato Grosso do Sul",
+      "category": "geografia",
+      "source": "https://educa.ibge.gov.br/jovens/conheca-o-brasil/territorio/19637-divisao-territorial.html",
+      "note": "A cidade é a capital da UF."
+    },
+    {
+      "subject": "Olinda",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Jaboatão dos Guararapes",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Caruaru",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Petrolina",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Paulista",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Cabo de Santo Agostinho",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Garanhuns",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Arcoverde",
+      "predicate": "localizado_em",
+      "object": "Pernambuco",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Niterói",
+      "predicate": "localizado_em",
+      "object": "Rio de Janeiro",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Duque de Caxias",
+      "predicate": "localizado_em",
+      "object": "Rio de Janeiro",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Nova Iguaçu",
+      "predicate": "localizado_em",
+      "object": "Rio de Janeiro",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "São Gonçalo",
+      "predicate": "localizado_em",
+      "object": "Rio de Janeiro",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Campos dos Goytacazes",
+      "predicate": "localizado_em",
+      "object": "Rio de Janeiro",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Petrópolis",
+      "predicate": "localizado_em",
+      "object": "Rio de Janeiro",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Campinas",
+      "predicate": "localizado_em",
+      "object": "São Paulo",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Santos",
+      "predicate": "localizado_em",
+      "object": "São Paulo",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Sorocaba",
+      "predicate": "localizado_em",
+      "object": "São Paulo",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Ribeirão Preto",
+      "predicate": "localizado_em",
+      "object": "São Paulo",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "São José dos Campos",
+      "predicate": "localizado_em",
+      "object": "São Paulo",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Guarulhos",
+      "predicate": "localizado_em",
+      "object": "São Paulo",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Feira de Santana",
+      "predicate": "localizado_em",
+      "object": "Bahia",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Vitória da Conquista",
+      "predicate": "localizado_em",
+      "object": "Bahia",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Ilhéus",
+      "predicate": "localizado_em",
+      "object": "Bahia",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Porto Seguro",
+      "predicate": "localizado_em",
+      "object": "Bahia",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Parintins",
+      "predicate": "localizado_em",
+      "object": "Amazonas",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Itacoatiara",
+      "predicate": "localizado_em",
+      "object": "Amazonas",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Santarém",
+      "predicate": "localizado_em",
+      "object": "Pará",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Marabá",
+      "predicate": "localizado_em",
+      "object": "Pará",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Uberlândia",
+      "predicate": "localizado_em",
+      "object": "Minas Gerais",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Contagem",
+      "predicate": "localizado_em",
+      "object": "Minas Gerais",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Juiz de Fora",
+      "predicate": "localizado_em",
+      "object": "Minas Gerais",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Londrina",
+      "predicate": "localizado_em",
+      "object": "Paraná",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Maringá",
+      "predicate": "localizado_em",
+      "object": "Paraná",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Foz do Iguaçu",
+      "predicate": "localizado_em",
+      "object": "Paraná",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Caxias do Sul",
+      "predicate": "localizado_em",
+      "object": "Rio Grande do Sul",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Pelotas",
+      "predicate": "localizado_em",
+      "object": "Rio Grande do Sul",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Juazeiro do Norte",
+      "predicate": "localizado_em",
+      "object": "Ceará",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "Sobral",
+      "predicate": "localizado_em",
+      "object": "Ceará",
+      "category": "geografia",
+      "source": "",
+      "note": "Exemplo de localização municipal; não é ranking de população ou área."
+    },
+    {
+      "subject": "bandeira do brasil",
+      "predicate": "possui",
+      "object": "verde",
+      "category": "cores",
+      "source": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/bandeira/bandeira-nacional",
+      "note": "Cor presente na bandeira nacional."
+    },
+    {
+      "subject": "bandeira do brasil",
+      "predicate": "possui",
+      "object": "amarelo",
+      "category": "cores",
+      "source": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/bandeira/bandeira-nacional",
+      "note": "Cor presente na bandeira nacional."
+    },
+    {
+      "subject": "bandeira do brasil",
+      "predicate": "possui",
+      "object": "azul",
+      "category": "cores",
+      "source": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/bandeira/bandeira-nacional",
+      "note": "Cor presente na bandeira nacional."
+    },
+    {
+      "subject": "bandeira do brasil",
+      "predicate": "possui",
+      "object": "branco",
+      "category": "cores",
+      "source": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/bandeira/bandeira-nacional",
+      "note": "Cor presente na bandeira nacional."
+    },
+    {
+      "subject": "gato",
+      "predicate": "e_um",
+      "object": "felino",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "cachorro",
+      "predicate": "e_um",
+      "object": "canino",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "vaca",
+      "predicate": "e_um",
+      "object": "bovino",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "cavalo",
+      "predicate": "e_um",
+      "object": "equino",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "leão",
+      "predicate": "e_um",
+      "object": "felino",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "tigre",
+      "predicate": "e_um",
+      "object": "felino",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "felino",
+      "predicate": "e_um",
+      "object": "mamífero",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "canino",
+      "predicate": "e_um",
+      "object": "mamífero",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "bovino",
+      "predicate": "e_um",
+      "object": "mamífero",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "equino",
+      "predicate": "e_um",
+      "object": "mamífero",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "golfinho",
+      "predicate": "e_um",
+      "object": "mamífero",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "baleia",
+      "predicate": "e_um",
+      "object": "mamífero",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "morcego",
+      "predicate": "e_um",
+      "object": "mamífero",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "flamingo",
+      "predicate": "e_um",
+      "object": "ave",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "pinguim",
+      "predicate": "e_um",
+      "object": "ave",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "avestruz",
+      "predicate": "e_um",
+      "object": "ave",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "águia",
+      "predicate": "e_um",
+      "object": "ave",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "galinha",
+      "predicate": "e_um",
+      "object": "ave",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "papagaio",
+      "predicate": "e_um",
+      "object": "ave",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "pardal",
+      "predicate": "e_um",
+      "object": "ave",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "tubarão",
+      "predicate": "e_um",
+      "object": "peixe",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "sardinha",
+      "predicate": "e_um",
+      "object": "peixe",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "salmão",
+      "predicate": "e_um",
+      "object": "peixe",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "tilápia",
+      "predicate": "e_um",
+      "object": "peixe",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "cobra",
+      "predicate": "e_um",
+      "object": "réptil",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "jacaré",
+      "predicate": "e_um",
+      "object": "réptil",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "tartaruga",
+      "predicate": "e_um",
+      "object": "réptil",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "sapo",
+      "predicate": "e_um",
+      "object": "anfíbio",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "rã",
+      "predicate": "e_um",
+      "object": "anfíbio",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "borboleta",
+      "predicate": "e_um",
+      "object": "inseto",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "formiga",
+      "predicate": "e_um",
+      "object": "inseto",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "abelha",
+      "predicate": "e_um",
+      "object": "inseto",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "aranha",
+      "predicate": "e_um",
+      "object": "aracnídeo",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "caranguejo",
+      "predicate": "e_um",
+      "object": "crustáceo",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "polvo",
+      "predicate": "e_um",
+      "object": "molusco",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "minhoca",
+      "predicate": "e_um",
+      "object": "anelídeo",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "mamífero",
+      "predicate": "e_um",
+      "object": "vertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "ave",
+      "predicate": "e_um",
+      "object": "vertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "peixe",
+      "predicate": "e_um",
+      "object": "vertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "réptil",
+      "predicate": "e_um",
+      "object": "vertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "anfíbio",
+      "predicate": "e_um",
+      "object": "vertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "inseto",
+      "predicate": "e_um",
+      "object": "invertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "aracnídeo",
+      "predicate": "e_um",
+      "object": "invertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "crustáceo",
+      "predicate": "e_um",
+      "object": "invertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "molusco",
+      "predicate": "e_um",
+      "object": "invertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "anelídeo",
+      "predicate": "e_um",
+      "object": "invertebrado",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Classificação taxonômica simplificada, não substitui espécie/gênero taxonômico exato."
+    },
+    {
+      "subject": "ave",
+      "predicate": "possui",
+      "object": "penas",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "ave",
+      "predicate": "possui",
+      "object": "bico",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "ave",
+      "predicate": "possui",
+      "object": "asas",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "peixe",
+      "predicate": "possui",
+      "object": "brânquias",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "mamífero",
+      "predicate": "possui",
+      "object": "coluna_vertebral",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "vertebrado",
+      "predicate": "possui",
+      "object": "coluna_vertebral",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "inseto",
+      "predicate": "possui",
+      "object": "seis_patas",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "aracnídeo",
+      "predicate": "possui",
+      "object": "oito_patas",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "réptil",
+      "predicate": "possui",
+      "object": "pele_com_escamas",
+      "category": "animais",
+      "source": "https://learningzone.oumnh.ox.ac.uk/how-we-divide-the-animal-kingdom",
+      "note": "Característica geral didática; espécies podem ter exceções para traços típicos."
+    },
+    {
+      "subject": "flamingo",
+      "predicate": "cor_tipica",
+      "object": "rosa",
+      "category": "animais",
+      "source": "",
+      "note": "Coloração típica, pode variar conforme indivíduo ou espécie."
+    },
+    {
+      "subject": "pinguim",
+      "predicate": "cor_tipica",
+      "object": "preto_e_branco",
+      "category": "animais",
+      "source": "",
+      "note": "Coloração típica, pode variar conforme indivíduo ou espécie."
+    },
+    {
+      "subject": "tigre",
+      "predicate": "cor_tipica",
+      "object": "laranja_com_listras",
+      "category": "animais",
+      "source": "",
+      "note": "Coloração típica, pode variar conforme indivíduo ou espécie."
+    },
+    {
+      "subject": "leão",
+      "predicate": "cor_tipica",
+      "object": "dourado",
+      "category": "animais",
+      "source": "",
+      "note": "Coloração típica, pode variar conforme indivíduo ou espécie."
+    },
+    {
+      "subject": "zebra",
+      "predicate": "cor_tipica",
+      "object": "preto_e_branco",
+      "category": "animais",
+      "source": "",
+      "note": "Coloração típica, pode variar conforme indivíduo ou espécie."
+    },
+    {
+      "subject": "urso_polar",
+      "predicate": "cor_tipica",
+      "object": "branco",
+      "category": "animais",
+      "source": "",
+      "note": "Coloração típica, pode variar conforme indivíduo ou espécie."
+    },
+    {
+      "subject": "gato",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "https://www.cats.org.uk/help-and-advice/caring-for-your-cat/diet/cats-and-drinking",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "cachorro",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "vaca",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "cavalo",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "leão",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "tigre",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "elefante",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "coelho",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "porco",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "galinha",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "pinguim",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "flamingo",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "papagaio",
+      "predicate": "bebe",
+      "object": "água",
+      "category": "bebidas",
+      "source": "",
+      "note": "Água é bebida fisiologicamente necessária; não é uma lista completa."
+    },
+    {
+      "subject": "filhote de gato",
+      "predicate": "bebe",
+      "object": "leite materno",
+      "category": "bebidas",
+      "source": "https://www.cats.org.uk/help-and-advice/caring-for-your-cat/diet/cats-and-drinking",
+      "note": "Antes do desmame, filhotes se alimentam de leite materno."
+    },
+    {
+      "subject": "água",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação de uso comum."
+    },
+    {
+      "subject": "leite de vaca",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação de uso comum."
+    },
+    {
+      "subject": "suco de laranja",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação de uso comum."
+    },
+    {
+      "subject": "café",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação de uso comum."
+    },
+    {
+      "subject": "chá",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação de uso comum."
+    },
+    {
+      "subject": "água de coco",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação de uso comum."
+    },
+    {
+      "subject": "refrigerante",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação de uso comum."
+    },
+    {
+      "subject": "iogurte líquido",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação de uso comum."
+    },
+    {
+      "subject": "água",
+      "predicate": "cor_tipica",
+      "object": "incolor",
+      "category": "bebidas",
+      "source": "",
+      "note": "A aparência pode variar conforme preparo, ingredientes e iluminação."
+    },
+    {
+      "subject": "leite de vaca",
+      "predicate": "cor_tipica",
+      "object": "branco",
+      "category": "bebidas",
+      "source": "",
+      "note": "A aparência pode variar conforme preparo, ingredientes e iluminação."
+    },
+    {
+      "subject": "café",
+      "predicate": "cor_tipica",
+      "object": "marrom_escuro",
+      "category": "bebidas",
+      "source": "",
+      "note": "A aparência pode variar conforme preparo, ingredientes e iluminação."
+    },
+    {
+      "subject": "suco de laranja",
+      "predicate": "cor_tipica",
+      "object": "alaranjado",
+      "category": "bebidas",
+      "source": "",
+      "note": "A aparência pode variar conforme preparo, ingredientes e iluminação."
+    },
+    {
+      "subject": "suco de uva",
+      "predicate": "cor_tipica",
+      "object": "roxo",
+      "category": "bebidas",
+      "source": "",
+      "note": "A aparência pode variar conforme preparo, ingredientes e iluminação."
+    },
+    {
+      "subject": "água de coco",
+      "predicate": "cor_tipica",
+      "object": "transparente",
+      "category": "bebidas",
+      "source": "",
+      "note": "A aparência pode variar conforme preparo, ingredientes e iluminação."
+    },
+    {
+      "subject": "leite de vaca",
+      "predicate": "origem",
+      "object": "vaca",
+      "category": "bebidas",
+      "source": "",
+      "note": "Identifica ingrediente ou origem usual."
+    },
+    {
+      "subject": "suco de laranja",
+      "predicate": "origem",
+      "object": "laranja",
+      "category": "bebidas",
+      "source": "",
+      "note": "Identifica ingrediente ou origem usual."
+    },
+    {
+      "subject": "suco de uva",
+      "predicate": "origem",
+      "object": "uva",
+      "category": "bebidas",
+      "source": "",
+      "note": "Identifica ingrediente ou origem usual."
+    },
+    {
+      "subject": "água de coco",
+      "predicate": "origem",
+      "object": "coco",
+      "category": "bebidas",
+      "source": "",
+      "note": "Identifica ingrediente ou origem usual."
+    },
+    {
+      "subject": "vermelho",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "verde",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "azul",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "amarelo",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "preto",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "branco",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "rosa",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "roxo",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "laranja",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "marrom",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "cinza",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "ciano",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "magenta",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "bege",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "violeta",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "turquesa",
+      "predicate": "e_um",
+      "object": "cor",
+      "category": "cores",
+      "source": "",
+      "note": "Categoria de cor comum."
+    },
+    {
+      "subject": "vermelho",
+      "predicate": "e_um",
+      "object": "cor_primaria_da_luz",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Primárias aditivas RGB, não confundir com pigmento."
+    },
+    {
+      "subject": "verde",
+      "predicate": "e_um",
+      "object": "cor_primaria_da_luz",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Primárias aditivas RGB, não confundir com pigmento."
+    },
+    {
+      "subject": "azul",
+      "predicate": "e_um",
+      "object": "cor_primaria_da_luz",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Primárias aditivas RGB, não confundir com pigmento."
+    },
+    {
+      "subject": "ciano",
+      "predicate": "e_um",
+      "object": "cor_primaria_de_pigmento_cmy",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Modelo subtrativo, não confundir com cor primária de luz."
+    },
+    {
+      "subject": "magenta",
+      "predicate": "e_um",
+      "object": "cor_primaria_de_pigmento_cmy",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Modelo subtrativo, não confundir com cor primária de luz."
+    },
+    {
+      "subject": "amarelo",
+      "predicate": "e_um",
+      "object": "cor_primaria_de_pigmento_cmy",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Modelo subtrativo, não confundir com cor primária de luz."
+    },
+    {
+      "subject": "vermelho_e_verde",
+      "predicate": "produz",
+      "object": "amarelo",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Mistura aditiva de luz, não tinta."
+    },
+    {
+      "subject": "verde_e_azul",
+      "predicate": "produz",
+      "object": "ciano",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Mistura aditiva de luz, não tinta."
+    },
+    {
+      "subject": "vermelho_e_azul",
+      "predicate": "produz",
+      "object": "magenta",
+      "category": "cores",
+      "source": "https://portaldoprofessor.mec.gov.br/storage/recursos/10651/luz_e_cores.pdf",
+      "note": "Mistura aditiva de luz, não tinta."
+    },
+    {
+      "subject": "leite",
+      "predicate": "e_um",
+      "object": "bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "No uso comum, leite é uma bebida; podem existir leites de diferentes origens."
+    },
+    {
+      "subject": "leite",
+      "predicate": "cor_tipica",
+      "object": "branco",
+      "category": "bebidas",
+      "source": "",
+      "note": "Aspecto usual do leite de vaca, podendo variar conforme o produto."
+    },
+    {
+      "subject": "bandeira_de_brasil",
+      "predicate": "possui",
+      "object": "verde",
+      "category": "cores",
+      "source": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/bandeira/bandeira-nacional",
+      "note": "Alias de sujeito exigido pelo interpretador de bandeiras; a bandeira possui quatro cores."
+    },
+    {
+      "subject": "bandeira_de_brasil",
+      "predicate": "possui",
+      "object": "amarelo",
+      "category": "cores",
+      "source": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/bandeira/bandeira-nacional",
+      "note": "Alias de sujeito exigido pelo interpretador de bandeiras; a bandeira possui quatro cores."
+    },
+    {
+      "subject": "bandeira_de_brasil",
+      "predicate": "possui",
+      "object": "azul",
+      "category": "cores",
+      "source": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/bandeira/bandeira-nacional",
+      "note": "Alias de sujeito exigido pelo interpretador de bandeiras; a bandeira possui quatro cores."
+    },
+    {
+      "subject": "bandeira_de_brasil",
+      "predicate": "possui",
+      "object": "branco",
+      "category": "cores",
+      "source": "https://www.gov.br/planalto/pt-br/conheca-a-presidencia/biblioteca-da-pr/simbolos-nacionais/bandeira/bandeira-nacional",
+      "note": "Alias de sujeito exigido pelo interpretador de bandeiras; a bandeira possui quatro cores."
+    }
+  ]
+}

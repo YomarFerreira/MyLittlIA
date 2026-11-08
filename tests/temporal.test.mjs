@@ -1,0 +1,25 @@
+import assert from 'node:assert/strict';
+import {temporalAnswer} from '../server/reasoning/temporal.js';
+import {mkdtempSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {openDatabase} from '../server/persistence/database.js';
+import {sendChatMessage} from '../server/conversation/chat.js';
+const now=new Date('2026-11-01T15:00:00Z');
+assert.match(temporalAnswer('E amanhã?', [{role:'assistant',content:'Hoje é domingo, 1 de novembro de 2026.'}],now).answer,/segunda-feira, 2 de novembro de 2026/);
+assert.equal(temporalAnswer('E amanhã?', [],now),null);
+assert.match(temporalAnswer('ontem', [],now).answer,/31 de outubro de 2026/);
+assert.match(temporalAnswer('depois de amanhã', [],now).answer,/3 de novembro de 2026/);
+assert.match(temporalAnswer('daqui a 10 dias',[],now).answer,/11 de novembro de 2026/);
+assert.match(temporalAnswer('qual dia da semana será 15 de novembro de 2026?',[],now).answer,/domingo, 15 de novembro de 2026/);
+assert.match(temporalAnswer('quantos dias faltam para o Natal?',[],now).answer,/54 dias/);
+assert.match(temporalAnswer('próximo domingo',[],now).answer,/8 de novembro de 2026/);
+assert.match(temporalAnswer('amanhã',[],new Date('2026-12-31T15:00:00Z')).answer,/1 de janeiro de 2027/);
+const dir=mkdtempSync(join(tmpdir(),'my-temporal-'));
+try {const db=openDatabase(join(dir,'test.sqlite'));
+const first=sendChatMessage(db,{text:'Que dia é hoje?'});
+const follow=sendChatMessage(db,{text:'E amanhã?',conversationId:first.conversationId});
+assert.equal(follow.result.kind,'temporal-calculation');
+assert.doesNotMatch(follow.reply,/ensinar/);
+db.close();}finally{rmSync(dir,{recursive:true,force:true});}
+console.log('PASS: contextual calendar operations');

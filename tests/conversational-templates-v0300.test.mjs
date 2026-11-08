@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import {mkdtempSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {openDatabase} from '../server/persistence/database.js';
+import {renderConversationalTemplate} from '../server/language/response-templates.js';
+import {selfAwarenessAnswer} from '../server/reasoning/self-awareness.js';
+import {topicSummaryAnswer} from '../server/reasoning/topic-summary.js';
+const folder=mkdtempSync(join(tmpdir(),'mylittlia-v0300-'));
+try {
+ const path=join(folder,'test.sqlite');
+ let db=openDatabase(path,{seed:false});
+ assert.ok(db.prepare('SELECT version FROM schema_migrations WHERE version=12').get());
+ assert.equal(selfAwarenessAnswer(db,'Olá').answer,'Olá! Como posso ajudar você hoje?');
+ assert.match(selfAwarenessAnswer(db,'Quem é você?').answer,/MylittlIA/);
+ assert.match(selfAwarenessAnswer(db,'Qual sua versão?','0.30.0').answer,/v0\.30\.0/);
+ assert.equal(renderConversationalTemplate(db,'version'),null);
+ assert.equal(renderConversationalTemplate(db,'does-not-exist'),null);
+ db.prepare("UPDATE conversational_templates SET template_text=? WHERE template_key='greeting'").run('Oi! Estou aprendendo com você.');
+ assert.equal(selfAwarenessAnswer(db,'ola').answer,'Oi! Estou aprendendo com você.');
+ db.prepare('INSERT INTO knowledge_relations(id,subject,predicate,object) VALUES (?,?,?,?)').run('demo1','gato','e_um','mamifero');
+ assert.match(topicSummaryAnswer(db,'o que vc sabe sobre animais?').answer,/mamifero/);
+ db.prepare("UPDATE conversational_templates SET template_text=? WHERE template_key='topic-animals'").run('Aprendi sobre {categories}. {learning}');
+ assert.match(topicSummaryAnswer(db,'o que vc sabe sobre animais?').answer,/Aprendi sobre/);
+ db.close();
+ db=openDatabase(path,{seed:false});
+ assert.equal(selfAwarenessAnswer(db,'ola').answer,'Oi! Estou aprendendo com você.');
+ assert.equal(db.prepare('SELECT COUNT(*) n FROM conversational_templates WHERE template_key=?').get('greeting').n,1);
+ db.close();
+ console.log('PASS: migração v12, identidade, versões, tópicos, edição e persistência de templates');
+} finally {rmSync(folder,{recursive:true,force:true});}

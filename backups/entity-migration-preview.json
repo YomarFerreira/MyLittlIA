@@ -1,0 +1,17 @@
+{
+  "preserved": 4695,
+  "aliases": 54,
+  "audit": [
+    {
+      "id": 1,
+      "relation_id": "e5cb81ee-ec89-4dee-87ac-b7a15c4e29b7",
+      "original_subject": "estado_de_pernambuco",
+      "original_object": "violento",
+      "canonical_subject": "pernambuco",
+      "canonical_object": "violento",
+      "operation": "migration-28",
+      "created_at": "2026-11-08 17:08:55"
+    }
+  ],
+  "conflicts": []
+}

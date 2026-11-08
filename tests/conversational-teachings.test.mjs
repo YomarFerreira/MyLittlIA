@@ -1,0 +1,34 @@
+import assert from 'node:assert/strict';
+import {mkdtempSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {openDatabase} from '../server/persistence/database.js';
+import {sendChatMessage} from '../server/conversation/chat.js';
+import {listConversationalTeachings,reviewConversationalTeaching} from '../server/learning/teachings.js';
+const dir=mkdtempSync(join(tmpdir(),'myl019-teachings-'));
+try {
+  const db=openDatabase(join(dir,'test.db'));
+  const q='Quem inventou a palavra girafotron?';
+  const unknown=sendChatMessage(db,{text:q});
+  assert.match(unknown.reply,/pode me ensinar/i);
+  const accept=sendChatMessage(db,{conversationId:unknown.conversationId,text:'Sim, posso.'});
+  assert.equal(accept.result.kind,'conversation-teaching-invitation');
+  const taught=sendChatMessage(db,{conversationId:unknown.conversationId,text:'Foi inventada por uma personagem de um conto.'});
+  assert.equal(taught.result.kind,'conversation-teaching-pending');
+  assert.match(taught.reply,/Registrei o que você me ensinou/i);
+  assert.equal(db.prepare('SELECT count(*) n FROM knowledge').get().n,2);
+  const repeated=sendChatMessage(db,{text:q});
+  assert.equal(repeated.result.kind,'knowledge-pending-review');
+  assert.match(repeated.reply,/ainda aguarda sua aprovação/i);
+  const items=listConversationalTeachings(db).filter(x=>x.status==='pending');
+  assert.equal(items.length,1);
+  assert.equal(reviewConversationalTeaching(db,items[0].id,'approve').decision,'approve');
+  const after=sendChatMessage(db,{text:q});
+  assert.match(after.reply,/personagem de um conto/i);
+  assert.equal(listConversationalTeachings(db).filter(x=>x.status==='pending').length,0);
+  db.close();
+  const reopened=openDatabase(join(dir,'test.db'));
+  assert.equal(reopened.prepare("SELECT count(*) n FROM conversational_teachings WHERE status='approved'").get().n,1);
+  reopened.close();
+  console.log('OK: ensino, pendência, repetição, aprovação, resposta e persistência');
+} finally {rmSync(dir,{recursive:true,force:true});}

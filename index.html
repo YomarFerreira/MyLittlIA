@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+ <head>
+  <meta charset="utf-8"/>
+  <meta content="width=device-width,initial-scale=1" name="viewport"/>
+  <title>MylittlIA Lab · v0.34.2</title>
+  <link rel="icon" type="image/png" href="./favicon.png?v=0.27.1"/>
+  <link rel="shortcut icon" href="./favicon.ico?v=0.27.1"/>
+  <link href="./css/styles.css?v=0.34.2" rel="stylesheet"/>
+ </head>
+ <body>
+  <main class="shell">
+   <header>
+    <div>
+     <span class="eyebrow">
+      LABORAT&Oacute;RIO DE LLM EXPERIMENTAL (Little Language Model) &middot; <span id="app-version">v0.34.2</span>
+     </span>
+     <h1 class="brand-heading">
+      <img class="brand-mark" src="./favicon.png?v=0.27.1" alt="Marca da MylittlIA: cérebro com circuitos"/>
+      MylittlIA
+      <span class="accent">
+       Lab
+      </span>
+     </h1>
+     <p>
+      Descubra como uma pequena intelig&ecirc;ncia artificial aprende, interpreta e constr&oacute;i respostas.
+     </p>
+    </div>
+</header>
+   <section class="panel">
+    <label for="prompt">
+     Mensagem
+    </label>
+    <textarea id="prompt" rows="2" placeholder="Qual a capital de Pernambuco" aria-label="Mensagem"></textarea>
+    <div class="toolbar">
+     <button id="run">
+      ▶ Enviar
+     </button>
+     <button class="secondary" disabled="" id="prev">
+      &larr; Anterior
+     </button>
+     <button class="secondary" disabled="" id="next">
+      Pr&oacute;ximo &rarr;
+     </button>
+     <button class="secondary" id="reset">
+      Reiniciar
+     </button>
+     <label class="inline">
+      <input checked="" id="auto" type="checkbox"/>
+      Execu&ccedil;&atilde;o autom&aacute;tica
+     </label>
+    </div>
+    <p class="hint">
+     Minha interpreta&ccedil;&atilde;o ainda &eacute; limitada a estruturas reconhecidas; palavras-chave isoladas n&atilde;o bastam. A vetoriza&ccedil;&atilde;o &eacute; ilustrativa e a agrega&ccedil;&atilde;o &eacute; matem&aacute;tica real; a inten&ccedil;&atilde;o &eacute; classificada por um pequeno modelo neural real; a resposta continua baseada em fatos e regras cadastrados.
+    </p>
+   </section>
+   <section class="panel" id="chat-panel" aria-label="Conversa contínua">
+    <div class="section-head">
+      <h2>Conversa com a MylittlIA</h2>
+      <div class="chat-header-actions">
+        <div class="chat-order-controls" role="group" aria-label="Ordenação da conversa">
+          <button id="chat-order-newest" type="button" class="secondary chat-order-chevron" title="Recentes primeiro (interações mais novas no topo)" aria-label="Recentes primeiro" aria-pressed="true"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="M4 16 12 8l8 8" /></svg></button>
+          <button id="chat-order-oldest" type="button" class="secondary chat-order-chevron" title="Antigas primeiro (interações mais antigas no topo)" aria-label="Antigas primeiro" aria-pressed="false"><svg viewBox="0 0 24 24" aria-hidden="true" focusable="false"><path d="m4 8 8 8 8-8" /></svg></button>
+        </div>
+        <button id="new-chat" type="button" class="secondary">Nova conversa</button>
+      </div>
+    </div>
+    <div id="chat-history" class="chat-history" aria-live="polite"></div>
+    <p class="hint">Eu acompanho o assunto da conversa para algumas perguntas relacionadas. Novos conhecimentos precisam de sua aprovação.</p>
+  </section>
+   <section class="panel" id="flow-panel">
+    <div class="section-head">
+     <h2>
+      Fluxo entre camadas
+     </h2>
+     <span id="status">
+      Aguardando entrada
+     </span>
+    </div>
+    <div class="flow-scroller">
+     <div class="flow-track">
+      <div class="pipeline" id="pipeline">
+      </div>
+     </div>
+    </div>
+    <div class="flow-footer">
+     <p class="hint">Clique em qualquer filtro vertical para inspecionar os dados recebidos, as opera&ccedil;&otilde;es e a sa&iacute;da daquela etapa.</p>
+     <button class="secondary flow-export" disabled="" id="export" type="button">Exportar trace JSON</button>
+    </div>
+   </section>
+   <section aria-label="Resultados da execu&ccedil;&atilde;o" class="results-stack">
+<section class="panel" id="inspector-panel">
+     <div class="section-head">
+      <h2>
+       Inspetor da camada
+      </h2>
+      <span id="counter">
+       0/0
+      </span>
+     </div>
+     <div class="inspector empty" id="inspector">
+      Execute uma pergunta e selecione uma camada.
+     </div>
+    </section>
+   </section>
+   <section class="panel" id="retrieval-panel">
+     <div class="section-head"><h2>Laboratório de recuperação contextual</h2><span>Atenção por relevância · experimental</span></div>
+     <p class="hint">Compare os conhecimentos já incorporados à memória. A pontuação mostra a semelhança das perguntas, não comprova se a resposta é verdadeira. Este mecanismo ainda não é um Transformer.</p>
+     <label for="retrieval-question">Pergunta para investigar</label>
+     <div class="training-controls">
+       <input id="retrieval-question" type="text" maxlength="500" placeholder="Ex.: O que é um flamingo?" />
+       <button id="retrieval-run" type="button">Investigar</button>
+     </div>
+     <p class="hint" id="retrieval-status" role="status">Faça uma pergunta para comparar os conhecimentos disponíveis.</p>
+     <div id="retrieval-answer" class="gen-output" aria-live="polite"></div>
+     <details><summary>Ver candidatos e distribuição de atenção</summary><div id="retrieval-candidates" class="knowledge-list"></div></details>
+   </section>
+   <section class="panel" id="knowledge-panel">
+    <div class="section-head">
+     <h2>
+      Conhecimento cadastrado &times; conhecimento aprendido
+     </h2>
+     <span>
+      Fontes separadas
+     </span>
+    </div>
+    <div class="knowledge-types">
+     <div>
+      <strong>
+       📚 Conhecimento cadastrado
+      </strong>
+      <p>
+       Perguntas e respostas salvas explicitamente. A resposta &eacute; recuperada por correspond&ecirc;ncia normalizada da pergunta; n&atilde;o altera pesos neurais.
+      </p>
+     </div>
+     <div>
+      <strong>
+       🧠 Conhecimento aprendido
+      </strong>
+      <p>
+       O classificador neural aprende padr&otilde;es de inten&ccedil;&atilde;o ao treinar exemplos. N&atilde;o aprende a resposta factual nem gera texto nesta vers&atilde;o.
+      </p>
+     </div>
+    </div>
+    <h3>
+     Ensinar uma pergunta e sua resposta
+    </h3>
+    <div class="knowledge-form">
+     <label>
+      Pergunta
+      <input id="knowledge-question" maxlength="500" placeholder="Qual &eacute; a capital do Rio de Janeiro?"/>
+     </label>
+     <label>
+      Resposta esperada
+      <textarea id="knowledge-answer" maxlength="1200" placeholder="A capital do estado do Rio de Janeiro &eacute; Rio de Janeiro." rows="2"></textarea>
+     </label>
+     <label>
+      Inten&ccedil;&atilde;o (metadado)
+      <select id="knowledge-intent">
+       <option value="capital">
+        capital
+       </option>
+       <option value="outro">
+        outro
+       </option>
+       <option value="perguntar_bebida">
+        perguntar_bebida
+       </option>
+       <option value="perguntar_comida">
+        perguntar_comida
+       </option>
+      </select>
+     </label>
+     <div class="training-controls">
+      <button id="save-knowledge">
+       Salvar pergunta e resposta
+      </button>
+      <button class="secondary" hidden="" id="cancel-knowledge">
+       Cancelar edi&ccedil;&atilde;o
+      </button>
+      <button class="secondary" id="export-knowledge">
+       Exportar conhecimentos JSON
+      </button>
+      <label class="import-label">
+       Importar JSON
+       <input accept=".json,application/json" id="import-knowledge" type="file"/>
+      </label>
+     </div>
+     <p class="hint" id="knowledge-status" role="status">
+      Minha mem&oacute;ria est&aacute; pronta para receber novos conhecimentos!
+     </p>
+    </div>
+    <p class="hint" id="knowledge-import-help">Para corrigir ou atualizar algo que me ensinou, exporte seus conhecimentos, faça as alterações no arquivo e importe-o novamente. Vou atualizar as informações modificadas e preservar tudo o que você já me ensinou.</p>
+   </section>
+   <section class="panel" id="relations-panel">
+    <div class="section-head"><h2>Relações e aprendizado por conversa</h2><span>Memória explícita · inferência lógica</span></div>
+    <p class="hint">Você pode me ensinar sobre animais, lugares, pessoas e outros assuntos. Vou identificar a relação e pedir sua confirmação antes de guardá-la.</p>
+    <label for="conversation-text">Ensine algo à MylittlIA</label>
+    <div class="training-controls">
+     <input id="conversation-text" maxlength="500" placeholder="Ex.: O Rio de Janeiro é uma cidade" />
+     <button id="send-conversation" type="button">Analisar frase</button>
+    </div>
+    <p id="conversation-status" class="hint" role="status">Nenhuma mensagem analisada.</p>
+    <h3>Conhecimentos aguardando sua confirmação</h3>
+    <div id="proposals-list" class="knowledge-list"></div>
+    <details id="relations-details" class="relations-details">
+     <summary>Relações e pesos de inferência <span class="relations-summary-hint">Clique para consultar ou ajustar</span></summary>
+     <p class="hint">O peso indica o quanto a relação é confiável para nossas inferências, não se ela é permitida ou recomendada. Um fato sem avaliação não tem pontuação definida.</p>
+     <div class="assessment-tools">
+      <h3>Avaliação automática de conhecimentos</h3>
+      <p class="hint">Avalia sinais de evidência e possíveis conflitos. Não verifica fatos na internet, não altera pesos manuais e não considera a pontuação uma probabilidade de verdade.</p>
+      <div class="training-controls"><button type="button" class="secondary" id="assess-preview">Simular avaliação</button><button type="button" id="assess-apply">Avaliar em lote</button>
+      <select id="assessment-filter" aria-label="Filtrar avaliações"><option value="all">Todas as avaliações</option><option value="review">Revisão necessária</option><option value="conflict">Possíveis conflitos</option><option value="evidence">Evidência identificada</option></select></div>
+      <p id="assessment-summary" class="hint" role="status">Nenhuma avaliação executada nesta sessão.</p>
+      <div id="assessment-results" class="knowledge-list assessment-results"></div>
+     </div>
+     <div class="relation-tabs" role="group" aria-label="Filtrar relações por avaliação">
+      <button type="button" class="secondary" id="relations-pending" aria-pressed="true">Sem peso definido</button>
+      <button type="button" class="secondary" id="relations-defined" aria-pressed="false">Pesos definidos</button>
+     </div>
+     <label class="relations-search-label" for="relations-search">Buscar relação</label>
+     <input id="relations-search" class="relations-search" type="search" placeholder="Ex.: gato, leite, mamífero" autocomplete="off" />
+     <p id="relations-count" class="hint" role="status"></p>
+     <div id="relations-list" class="knowledge-list relations-list"></div>
+     <div class="relations-pagination">
+      <button id="relations-prev" class="secondary" type="button">←</button>
+      <span id="relations-page"></span>
+      <button id="relations-next" class="secondary" type="button">→</button>
+     </div>
+    </details>
+   </section>
+   <section class="panel" id="training-panel">
+    <div class="section-head">
+     <h2>
+      Laborat&oacute;rio de treinamento neural
+     </h2>
+     <span>
+      Classificador real &middot; softmax
+     </span>
+    </div>
+    <p class="training-detail">
+     Ensine exemplos de inten&ccedil;&otilde;es e acompanhe loss e acur&aacute;cia de treino e valida&ccedil;&atilde;o. O classificador n&atilde;o gera respostas: a sa&iacute;da textual vem de regras ou de conhecimento expl&iacute;cito.
+    </p>
+    <div class="training-controls">
+     <label>
+      &Eacute;pocas
+      <select id="epochs">
+       <option>
+        50
+       </option>
+       <option>
+        100
+       </option>
+       <option selected="">
+        350
+       </option>
+       <option>
+        700
+       </option>
+       <option>
+        1000
+       </option>
+      </select>
+     </label>
+     <label>
+      Taxa de aprendizado
+      <select id="rate">
+       <option value="0.05">
+        0,05
+       </option>
+       <option value="0.1">
+        0,1
+       </option>
+       <option selected="" value="0.3">
+        0,3
+       </option>
+       <option value="0.5">
+        0,5
+       </option>
+      </select>
+     </label>
+     <button class="secondary" id="retrain">
+      &orarr; Treinar modelo
+     </button>
+     <span id="training-status">
+      Preparando...
+     </span>
+    </div>
+    <div class="chart-legend">
+     <span class="legend-train">
+      ● Loss treino
+     </span>
+     <span class="legend-val">
+      ● Loss valida&ccedil;&atilde;o
+     </span>
+     <span class="legend-acc">
+      ● Acur&aacute;cia treino
+     </span>
+     <span class="legend-valacc">
+      ● Acur&aacute;cia valida&ccedil;&atilde;o
+     </span>
+    </div>
+    <canvas aria-label="Gr&aacute;fico de loss e acur&aacute;cia de treinamento e valida&ccedil;&atilde;o" class="training-chart" height="300" id="loss-chart" width="1100">
+    </canvas>
+    <p class="hint" id="training-summary">
+    </p>
+    <h3>
+     Ensinar uma nova frase ao classificador
+    </h3>
+    <div class="training-controls">
+     <label class="grow">
+      Frase de exemplo
+      <input id="example-text" maxlength="300" placeholder="Ex.: Voc&ecirc; sabe a capital de Sergipe?"/>
+     </label>
+     <label>
+      Inten&ccedil;&atilde;o
+      <select id="example-label">
+      </select>
+     </label>
+     <button id="add-example">
+      Adicionar exemplo
+     </button>
+    </div>
+    <p class="hint" id="example-status" role="status">
+     Os exemplos adicionados exigem novo treinamento e n&atilde;o ensinam fatos nem respostas ao motor de regras.
+    </p>
+    <details>
+     <summary>
+      Ver exemplos cadastrados
+     </summary>
+     <div class="examples-list" id="examples-list">
+     </div>
+    </details>
+   </section>
+   <section class="panel">
+    <div class="section-head">
+     <h2>
+      M&eacute;tricas da execu&ccedil;&atilde;o
+     </h2>
+     <span id="elapsed">
+      &mdash;
+     </span>
+    </div>
+    <div class="metrics" id="metrics">
+     <div>
+      Tokens de entrada
+      <strong>
+       &mdash;
+      </strong>
+     </div>
+     <div>
+      Tokens de sa&iacute;da
+      <strong>
+       &mdash;
+      </strong>
+     </div>
+     <div>
+      Etapas
+      <strong>
+       &mdash;
+      </strong>
+     </div>
+    </div>
+    <p class="hint">
+     Contagem do tokenizador did&aacute;tico (palavras e pontua&ccedil;&atilde;o), n&atilde;o equivalente &agrave; contagem de tokens de LLMs comerciais.
+    </p>
+   </section>
+   <footer>
+    MylittlIA Lab &middot; Laborat&oacute;rio de LLM experimental (Little Language Model) &middot; <span id="footer-version">v0.34.2</span>
+   </footer>
+
+   <section class="panel generative-lab" id="generative-lab">
+     <div class="section-head">
+       <h2>Laboratório neural generativo — experimental</h2>
+       <span id="gen-status">Modelo ainda não treinado</span>
+     </div>
+     <p class="hint">Compare dois modelos neurais experimentais: caracteres (contexto de 2) ou palavras completas (contexto de 8). Ambos treinam pesos reais, mas não são LLMs nem garantem respostas coerentes. A conversa principal permanece independente.</p>
+     <label for="gen-mode">Unidade de geração</label>
+     <select id="gen-mode" aria-label="Escolher tipo de geração"><option value="word" selected>Palavras completas (8 tokens)</option><option value="character">Caracteres (2 caracteres)</option></select>
+     <p class="hint" id="gen-mode-hint">O vocabulário é formado pelas palavras dos exemplos; palavras desconhecidas usam &lt;UNK&gt;. Os dois modelos usam checkpoints separados.</p>
+     <label for="gen-corpus">Exemplos para treinamento (um por linha)</label>
+     <textarea id="gen-corpus" rows="4" placeholder="pergunta: o que o gato bebe? resposta: água.&#10;pergunta: qual é a capital de pernambuco? resposta: recife."></textarea>
+     <div class="gen-controls">
+       <label for="gen-epochs">Épocas <select id="gen-epochs"><option>5</option><option selected>10</option><option>20</option><option>40</option></select></label>
+       <button id="gen-train" type="button">Treinar rede</button>
+       <span id="gen-train-info" class="hint" role="status">O modelo começa sem treinamento.</span>
+     </div>
+     <details id="gen-examples-details" class="gen-examples-section">
+       <summary>Exemplos armazenados e memória</summary>
+       <p class="hint">Os exemplos usados no treinamento ficam disponíveis para consulta. Você pode selecionar quais deseja ensinar também à memória de perguntas e respostas.</p>
+       <div class="gen-controls">
+         <button id="gen-examples-refresh" class="secondary" type="button">Consultar exemplos</button>
+         <button id="gen-examples-select-all" class="secondary" type="button">Selecionar todos</button>
+         <button id="gen-examples-deselect-all" class="secondary" type="button">Desmarcar todos</button>
+         <button id="gen-examples-incorporate" type="button">Incorporar selecionados à memória</button>
+         <span id="gen-examples-status" class="hint" role="status"></span>
+       </div>
+       <div id="gen-examples-list" class="knowledge-list gen-examples-list"></div>
+     </details>
+     <canvas id="gen-chart" class="training-chart" width="980" height="180" aria-label="Evolução do erro de predição durante o treinamento"></canvas>
+     <label for="gen-prompt">Começo da geração</label>
+     <textarea id="gen-prompt" rows="3">pergunta: o gato bebe? resposta:</textarea>
+     <div class="gen-controls">
+       <label for="gen-temperature">Temperatura <input type="number" id="gen-temperature" min="0.2" max="1.5" step="0.1" value="0.7" /></label>
+       <button id="gen-generate" type="button">Gerar texto</button>
+     </div>
+     <div id="gen-output" class="gen-output" aria-live="polite">Treine o modelo para experimentar a geração.</div>
+     <details>
+       <summary>Ver probabilidades e decisões de geração</summary>
+       <pre id="gen-trace" class="gen-trace">Ainda não há geração.</pre>
+     </details>
+   </section>
+    <script src="./js/attention-ui.js?v=0.15" type="module"></script>
+    <script type="module" src="./js/views.js?v=0.29.6"></script>
+  </main>
+  <script src="./js/app.js?v=0.34.2" type="module">
+  </script>
+ <script type="module" src="./js/generative-ui.js?v=0.14"></script>
+   <script type="module" src="./js/resizable-ui.js?v=0.20.1"></script>
+  <script>
+    fetch('/api/version', { cache: 'no-store' })
+      .then(response => response.ok ? response.json() : Promise.reject(new Error('version')))
+      .then(data => {
+        if (!/^\d+\.\d+(?:\.\d+)?$/.test(data.version)) return;
+        document.getElementById('app-version').textContent = 'v' + data.version;
+        document.getElementById('footer-version').textContent = 'v' + data.version;
+        document.title = 'MylittlIA Lab · v' + data.version;
+      })
+      .catch(() => {});
+  </script>
+ </body>
+</html>

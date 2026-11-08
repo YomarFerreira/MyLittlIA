@@ -1,0 +1,152 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "lot": "004",
+  "title": "Conceitos estatísticos e características dos animais — lote 004",
+  "compatible_with": "MylittlIA v0.29.5",
+  "relations": [
+    {
+      "subject": "Média aritmética",
+      "predicate": "e_um",
+      "object": "Medida de tendência central",
+      "category": "matematica",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Mediana",
+      "predicate": "e_um",
+      "object": "Medida de tendência central",
+      "category": "matematica",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Moda estatística",
+      "predicate": "e_um",
+      "object": "Medida de tendência central",
+      "category": "matematica",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Amplitude estatística",
+      "predicate": "e_um",
+      "object": "Medida de dispersão",
+      "category": "matematica",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Variância",
+      "predicate": "e_um",
+      "object": "Medida de dispersão",
+      "category": "matematica",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Desvio padrão",
+      "predicate": "e_um",
+      "object": "Medida de dispersão",
+      "category": "matematica",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Ornitorrinco",
+      "predicate": "e_um",
+      "object": "Mamífero",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Ornitorrinco",
+      "predicate": "caracteristica",
+      "object": "Ovíparo",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Morcego",
+      "predicate": "e_um",
+      "object": "Mamífero",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Morcego",
+      "predicate": "caracteristica",
+      "object": "Voa",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Pinguim",
+      "predicate": "caracteristica",
+      "object": "Não voa",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Pinguim",
+      "predicate": "caracteristica",
+      "object": "Nada",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Polvo",
+      "predicate": "e_um",
+      "object": "Molusco",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Polvo",
+      "predicate": "e_um",
+      "object": "Invertebrado",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Aranha",
+      "predicate": "e_um",
+      "object": "Aracnídeo",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Aranha",
+      "predicate": "numero_patas_tipico",
+      "object": "8",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Formiga",
+      "predicate": "numero_patas_tipico",
+      "object": "6",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    },
+    {
+      "subject": "Golfinho",
+      "predicate": "caracteristica",
+      "object": "Respira ar",
+      "category": "animais",
+      "source": "",
+      "note": "Fato introdutório; não verificado documentalmente de forma individual."
+    }
+  ]
+}

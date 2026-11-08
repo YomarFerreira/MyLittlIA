@@ -1,0 +1,11 @@
+import assert from 'node:assert/strict';
+import { readFileSync } from 'node:fs';
+const html = readFileSync(new URL('../index.html', import.meta.url), 'utf8');
+const app = readFileSync(new URL('../js/app.js', import.meta.url), 'utf8');
+assert.match(html, /<label for="prompt">\s*Mensagem\s*<\/label>/);
+assert.match(html, /<textarea id="prompt"[^>]*placeholder="Qual a capital de Pernambuco"[^>]*><\/textarea>/);
+assert.match(html, /id="run"[^>]*>\s*▶ Enviar\s*<\/button>/);
+assert.match(app, /const DEFAULT_MESSAGE = 'Qual a capital de Pernambuco';/);
+assert.match(app, /\$\('prompt'\)\.value\.trim\(\) \|\| DEFAULT_MESSAGE/);
+assert.match(app, /\$\('prompt'\)\.value = message/);
+console.log('Teste do campo de mensagem: OK');

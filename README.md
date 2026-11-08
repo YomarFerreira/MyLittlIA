@@ -2,7 +2,19 @@
 
 **LABORATÓRIO DE LLM EXPERIMENTAL (Little Language Model)**
 
-O MylittlIA é um laboratório educacional para explorar como um sistema de inteligência artificial recebe texto, identifica informações, consulta conhecimentos, acompanha uma conversa e constrói respostas. A proposta é tornar essas operações visíveis: experimentar, ensinar, inspecionar os resultados e entender os limites de cada mecanismo.
+**A MylittlIA é uma IA experimental voltada a estudos e aprendizado.** Sua base de conhecimentos é alimentada com um conjunto limitado de assuntos e exemplos, escolhido para permitir observar, testar e entender os mecanismos implementados.
+
+Os dados iniciais e os conjuntos de importação fornecidos com o projeto trabalham com os seguintes recortes:
+
+- **Geografia brasileira:** estados, siglas, capitais, municípios, bandeiras, biomas e alguns indicadores municipais, como população, área e PIB.
+- **Animais e ecologia:** classificação, características, alimentação, relações e vocalizações.
+- **Futebol brasileiro:** clubes, localização, competições e alguns dados de torcida, títulos e indicadores para comparações.
+
+Matemática e estatística, tempo e cronologia, lógica, linguagem e conhecimento, assim como arquitetura e organização de dados, integram a **parametrização e os mecanismos compartilhados do sistema**. São recursos para interpretar e operar sobre qualquer assunto, dentro das capacidades implementadas: comparar quantidades, ordenar resultados, considerar períodos, classificar entidades e relacionar conceitos. Não constituem assuntos adicionais da base temática.
+
+Esses recortes não têm cobertura completa. O conteúdo disponível em cada instalação depende dos conjuntos efetivamente importados e dos ensinamentos aprovados. Novos conhecimentos podem ser acrescentados para ampliar os experimentos, respeitando as estruturas que o sistema consegue interpretar.
+
+O laboratório permite explorar como um sistema de inteligência artificial recebe texto, identifica informações, consulta conhecimentos, acompanha uma conversa e constrói respostas. A proposta é tornar essas operações visíveis: experimentar, ensinar, inspecionar os resultados e entender os limites de cada mecanismo.
 
 O nome **Little Language Model** expressa essa proposta de experimentação em pequena escala. A implementação combina conhecimentos estruturados, regras de linguagem, operações de consulta e pequenas redes neurais treinadas localmente. Não implementa um grande modelo de linguagem nem uma arquitetura Transformer completa.
 

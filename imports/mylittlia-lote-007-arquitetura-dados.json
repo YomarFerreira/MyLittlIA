@@ -1,0 +1,152 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "lot": "007",
+  "title": "Arquitetura de dados e persistência",
+  "compatible_with": "MylittlIA v0.29.8",
+  "relations": [
+    {
+      "subject": "Migração de banco",
+      "predicate": "e_um",
+      "object": "Alteração versionada do esquema",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Migração de banco",
+      "predicate": "tem",
+      "object": "Versão",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "SQLite",
+      "predicate": "e_um",
+      "object": "Banco de dados relacional",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Tabela",
+      "predicate": "e_um",
+      "object": "Estrutura de armazenamento",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Registro",
+      "predicate": "e_um",
+      "object": "Conjunto de campos",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Chave primária",
+      "predicate": "e_um",
+      "object": "Identificador de registro",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Chave estrangeira",
+      "predicate": "e_um",
+      "object": "Referência a outro registro",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Consulta SQL",
+      "predicate": "e_um",
+      "object": "Operação sobre dados",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Índice de banco",
+      "predicate": "e_um",
+      "object": "Estrutura de acesso",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Transação",
+      "predicate": "e_um",
+      "object": "Unidade de operações",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Rollback",
+      "predicate": "e_um",
+      "object": "Reversão de transação",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Commit",
+      "predicate": "e_um",
+      "object": "Confirmação de transação",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Idempotência",
+      "predicate": "e_um",
+      "object": "Propriedade de repetição segura",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Backup",
+      "predicate": "e_um",
+      "object": "Cópia de segurança",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Conhecimento declarativo",
+      "predicate": "e_um",
+      "object": "Representação de fatos",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Algoritmo",
+      "predicate": "e_um",
+      "object": "Sequência de instruções",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Expressão regular",
+      "predicate": "e_um",
+      "object": "Padrão de reconhecimento textual",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    },
+    {
+      "subject": "Proveniência",
+      "predicate": "e_um",
+      "object": "Registro de origem da informação",
+      "category": "arquitetura de dados",
+      "source": "",
+      "note": "Definição introdutória para revisão didática, sem verificação documental individual."
+    }
+  ]
+}

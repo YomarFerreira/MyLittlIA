@@ -1,0 +1,536 @@
+[
+  {
+    "file": "assessments.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Avaliação em lote idempotente e pesos manuais preservados.\n(node:29672) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "attention-retrieval.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: recuperação contextual, não invenção e conversa integrada\n(node:169548) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "chat-input-history-v0303.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Histórico de entrada v0.30.3: OK\n"
+  },
+  {
+    "file": "chat-order-v0294.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: ordenação nos dois sentidos, grupos de perguntas/respostas, timestamps e preferência SQLite v11\n(node:86164) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "chat-turn-layout-v03011.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: cartões de interação, pergunta antes da resposta, ordenação, data/hora e texto seguro\n"
+  },
+  {
+    "file": "chat.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:87088) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\r\n  binding.unlink(getValidatedPath(path));\r\n          ^\r\n\r\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-chat-FD1L4d\\test.db'\r\n    at unlinkSync (node:fs:1953:11)\r\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\r\n    at rimrafSync (node:internal/fs/rimraf:196:7)\r\n    at node:internal/fs/rimraf:254:9\r\n    at Array.forEach (<anonymous>)\r\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\r\n    at rimrafSync (node:internal/fs/rimraf:194:7)\r\n    at rmSync (node:fs:1248:10)\r\n    at file:///C:/workspace/mylittlia/tests/chat.test.mjs:71:10\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-chat-FD1L4d\\\\test.db'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "claim-confidence.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: classificações qualitativas e valores apenas no trace técnico\n(node:94332) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "comparative-ranking-v03014.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.14: comparações, limites, fonte/período, contexto, filtros territoriais e outros domínios OK\n(node:52908) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "comparison-followup.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: respostas naturais, métricas do catálogo, escopo PE, repetição após falha e bloqueio de contexto antigo/ambíguo.\n(node:118460) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "comparison-scope-context.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: sequência da imagem, lacuna de dados mantém foco, três resultados, sigla, troca de estado e encerramento por nova pergunta.\n(node:40476) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "context-classification-v02912.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: marcador discursivo, mudança de entidade, classificação no SQLite e ausência de inferência negativa\n(node:54500) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "context-general-v0306.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:175312) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: The input did not match the regular expression /latido/i. Input:\r\n\r\n'Cachorro late. Esse som pode ser representado por “au au”.'\r\n\r\n    at file:///C:/workspace/mylittlia/tests/context-general-v0306.test.mjs:20:41\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: 'Cachorro late. Esse som pode ser representado por “au au”.',\r\n  expected: /latido/i,\r\n  operator: 'match'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "context-topic-v02911.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: troca de assunto, definição elíptica, sem bebida absurda e sem duplicidade de cor\n(node:153072) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "contextual-classifications-v0302.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.2: classificação contextual, precedência, ausência de dados e template editável OK\n(node:39132) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversation-semantic-context-v0299.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "contextual ranking 0.29.9 OK\n(node:107456) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversation-semantic-context.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:131852) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n+ actual - expected\n\n+ undefined\n- 'capitals'\n\n    at file:///C:/workspace/mylittlia/tests/conversation-semantic-context.test.mjs:29:9\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: undefined,\n  expected: 'capitals',\n  operator: 'strictEqual'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "conversational-learning-multistate-v0308.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.8: locais multivocabulares, revisão, aprovação e recuperação independente OK\n(node:107104) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversational-learning-v0307.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.7: extração multirrelação, aprovação, edição, proveniência, conflito e 5 consultas bidirecionais OK\n(node:181592) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversational-teachings.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: ensino, pendência, repetição, aprovação, resposta e persistência\n(node:167396) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "conversational-templates-v0300.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: migração v12, identidade, versões, tópicos, edição e persistência de templates\n(node:168264) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "dialogue-choice.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "pergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\nOK, por PIB, vai => Aqui estão as cidades do Brasil que conheço, por PIB:\n1. Recife — R$ 100\nEstou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Não sei de quando são algumas dessas medidas.\npergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\nok, vamos de PIB => Aqui estão as cidades do Brasil que conheço, por PIB:\n1. Recife — R$ 100\nEstou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Não sei de quando são algumas dessas medidas.\npergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\nsei lá, pode ser por qualquer um dos 3 => Como você deixou a escolha comigo, vou comparar por população.\n\nAqui estão as cidades do Brasil que conheço, por população:\n1. Recife — 1.500 habitantes\nEstou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Não sei de quando são algumas dessas medidas.\npergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\na segunda opção => Recife é a 2ª maior em área entre as cidades que conheço, com 200 km². Estou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Isso não significa que seja realmente a maior cidade de todo o Brasil. Não sei de quando são algumas dessas medidas.\npergunta => Você quer comparar as cidades do Brasil por população, extensão territorial ou PIB?\nsem preferência, você escolhe => Como você deixou a escolha comigo, vou comparar por população.\n\nAqui estão as cidades do Brasil que conheço, por população:\n1. Recife — 1.500 habitantes\nEstou considerando apenas as 2 cidades do Brasil para as quais tenho informações. Não sei de quando são algumas dessas medidas.\nOK: opções genéricas, PIB, delegação transparente e posição ordinal.\n(node:53004) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "dialogue-focus-v03010.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.10: contexto por turno, clubes/cidades, cores, títulos, ranking ambíguo, SQLite templates OK\n(node:162396) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "ellipsis-v0282.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: pergunta relacional, elipse, qualificações, troca de assunto\n(node:53108) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "entity-identity.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: upgrade real, aliases, evidências e pesos preservados, SQL direto, ambiguidade, bandeira distinta e idempotência.\n(node:172640) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "entity-teaching.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: quatro fatos, aprovação antiga, bloqueio de pronome, consultas separadas e prevenção de vazamento para vaca.\n(node:173608) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "examples-ui.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: botões de consultar e incorporar têm ações registradas\n"
+  },
+  {
+    "file": "flag-colors.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: cores de bandeira recuperadas do grafo no chat\n(node:52680) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "flexible-learning.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: existência de capital, frases gerais, aprovação e persistência\n(node:46008) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "football-facts-v03013.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.13: tipos de dados, consultas, fontes e exclusões geográficas OK\n(node:85312) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "football-research-v03018.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Clubes de referência para começar a comparação:\nPernambuco: Sport, Náutico, Santa Cruz\nEsta seleção é uma referência editorial por estado, não um ranking que combine torcida, títulos e finanças. Para indicar o maior, qual critério você quer usar: tamanho da torcida, valuation, títulos de uma competição específica, receita ou patrimônio líquido?\nOK: 117 clubes, 27 UFs, exemplos, períodos, lacunas, importação aditiva e idempotência.\n{\n  profiles: 117,\n  facts: 528,\n  inserted: 528,\n  coverage: {\n    ufs: 27,\n    clubs: 117,\n    titles: 116,\n    supporters: 22,\n    revenue: 30,\n    equity: 30,\n    historical_records: 261,\n    debt: 22,\n    valuation: 28\n  }\n}\n(node:53332) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "generative.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "OK: treinamento neural, loss, geração, probabilidades e checkpoint\n(node:153436) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\n[Error: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-gen-mSU0cI\\models.db'] {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-gen-mSU0cI\\\\models.db'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "generic-semantic.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "generic semantic OK\n(node:134952) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "geographic-hierarchy-v03012.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.12: inferência UF/cidade/país, exclusões, preservação e templates OK\n(node:100064) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "geographic-qualified-entity.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: qualificadores, entidades concorrentes, troca de estado e evidencias restritas a Pernambuco.\n(node:32392) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "graph-inference.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: inferencia por relacoes, pesos, sem inventar ou gravar conclusoes\n(node:81540) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "implicit-ranking-v03019.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "qual a maior torcida em pernambuco? => Considerando tamanho da torcida (2026), este é o maior clube de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQual é a maior torcida de Pernambuco? => Considerando tamanho da torcida (2026), este é o maior clube de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQual a maior torcida no estado de Pernambuco? => Considerando tamanho da torcida (2026), este é o maior clube de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQuem tem a maior torcida em PE? => Considerando tamanho da torcida (2026), este é o maior clube de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQuais são as maiores torcidas em Pernambuco? => Considerando tamanho da torcida (2026), estes são os 3 maiores clubes de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nQuais os 2 clubes com maior torcida em Pernambuco? => Considerando tamanho da torcida (2026), estes são os 2 maiores clubes de futebol em Pernambuco entre os registros comparáveis que conheço: 1. Sport — 30%\nOK: domínio implícito, pergunta singular/plural, limite, estado/sigla e continuidade do critério.\n(node:69164) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "import-topics-v0282.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:70796) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\r\n\r\nnull !== 0\r\n\r\n    at file:///C:/workspace/mylittlia/tests/import-topics-v0282.test.mjs:15:34\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: null,\r\n  expected: 0,\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "imported-chat-v0282.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: 27 capitais, pergunta → elipse e bandeira após importação real em banco temporário\n(node:37872) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "inspector-navigation.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Navegação do inspetor validada.\n"
+  },
+  {
+    "file": "language-engine.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "language engine OK\n(node:33980) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "learning-recovery.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Recuperação: histórico, isolamento, deduplicação, rejeição, aprovação e exclusão de falas da IA OK.\n(node:157372) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "legacy-neural-import.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: migração legada uma vez, preserva JSON e histórico SQLite\n(node:177264) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "lexical-equivalence-v0309.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.9: equivalências SQL, abreviações, perguntas contextuais, classes gerais, distinção de ranking e personalização OK\n(node:156792) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "limb-learning.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Aprendizado e consulta de quantidades: OK\n(node:119824) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "location-inference.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: localização positiva sem peso, sem inventar negativa\n(node:153256) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "message-input.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Teste do campo de mensagem: OK\n"
+  },
+  {
+    "file": "migrations.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: atualização incremental, rollback integral, repetição e preservação dos dados.\n(node:180212) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "municipal-lookup-v02910.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "municipal lookup 0.29.10 OK\n(node:34600) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "natural-descriptions.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: descrição natural por relações reais, sem pesos inventados\n(node:51776) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "negation-chat.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: negacao, nota coloquial, resposta e compatibilidade legada\n(node:34916) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "neural-examples.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:154628) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\r\n  binding.unlink(getValidatedPath(path));\r\n          ^\r\n\r\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-v014-xPm6oE\\mylittlia.db'\r\n    at unlinkSync (node:fs:1953:11)\r\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\r\n    at rimrafSync (node:internal/fs/rimraf:196:7)\r\n    at node:internal/fs/rimraf:254:9\r\n    at Array.forEach (<anonymous>)\r\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\r\n    at rimrafSync (node:internal/fs/rimraf:194:7)\r\n    at rmSync (node:fs:1248:10)\r\n    at file:///C:/workspace/mylittlia/tests/neural-examples.test.mjs:42:13\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-v014-xPm6oE\\\\mylittlia.db'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "neural-inspection.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: embeddings, concatenação e logits do modelo real\n(node:43296) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "neural-intent.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Neural intent v0.27 OK\n(node:48116) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "numeric-rankings.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "numeric rankings OK\n(node:172252) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "property-query-v0301.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.1: consultas, herança explícita, ausência de dados e template editável OK\n(node:32472) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "reasoning-feedback-v0284.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: v0.28.4 feedback não é ensino, critério explícito e verificação de medidas do SQLite\n(node:86560) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "relations.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:62400) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\r\n  binding.unlink(getValidatedPath(path));\r\n          ^\r\n\r\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-relations-TjgFQE\\test.db'\r\n    at unlinkSync (node:fs:1953:11)\r\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\r\n    at rimrafSync (node:internal/fs/rimraf:196:7)\r\n    at node:internal/fs/rimraf:254:9\r\n    at Array.forEach (<anonymous>)\r\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\r\n    at rimrafSync (node:internal/fs/rimraf:194:7)\r\n    at rmSync (node:fs:1248:10)\r\n    at file:///C:/workspace/mylittlia/tests/relations.test.mjs:41:13\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-relations-TjgFQE\\\\test.db'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "self-awareness-v0298.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:78172) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\r\n  binding.unlink(getValidatedPath(path));\r\n          ^\r\n\r\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-v0298-pEPsbY\\db.sqlite'\r\n    at unlinkSync (node:fs:1953:11)\r\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\r\n    at rimrafSync (node:internal/fs/rimraf:196:7)\r\n    at node:internal/fs/rimraf:254:9\r\n    at Array.forEach (<anonymous>)\r\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\r\n    at rimrafSync (node:internal/fs/rimraf:194:7)\r\n    at rmSync (node:fs:1248:10)\r\n    at file:///C:/workspace/mylittlia/tests/self-awareness-v0298.test.mjs:24:12\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-v0298-pEPsbY\\\\db.sqlite'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "self-awareness.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: self-awareness and effective confidence\n(node:67284) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-catalog-v029.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:20668) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\r\n  binding.unlink(getValidatedPath(path));\r\n          ^\r\n\r\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-v029-11VgA6\\test.db'\r\n    at unlinkSync (node:fs:1953:11)\r\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\r\n    at rimrafSync (node:internal/fs/rimraf:196:7)\r\n    at node:internal/fs/rimraf:254:9\r\n    at Array.forEach (<anonymous>)\r\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\r\n    at rimrafSync (node:internal/fs/rimraf:194:7)\r\n    at rmSync (node:fs:1248:10)\r\n    at file:///C:/workspace/mylittlia/tests/semantic-catalog-v029.test.mjs:36:10\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-v029-11VgA6\\\\test.db'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "semantic-composition-chat-v0304.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.4: conversa completa e composição semântica OK\n(node:109584) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-composition-v0304.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.4: composição, consulta, ausência de fatos, templates editáveis e persistência OK\n(node:38580) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-core-v28.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:116224) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\n    triggerUncaughtException(\n    ^\n\nAssertionError [ERR_ASSERTION]: Expected values to be strictly equal:\n\n28 !== 11\n\n    at file:///C:/workspace/mylittlia/tests/semantic-core-v28.test.mjs:63:9\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\n  generatedMessage: true,\n  code: 'ERR_ASSERTION',\n  actual: 28,\n  expected: 11,\n  operator: 'strictEqual'\n}\n\nNode.js v22.16.0\n"
+  },
+  {
+    "file": "semantic-entity-canonical-v0292.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: estado de Pernambuco reconhecido como Pernambuco; medidas preservadas\n(node:70968) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic-followups-v281.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: v0.28.1 contexto após Extensão/População, mudança de estado e explicação\n(node:104836) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "semantic.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: variações semânticas, fatos existentes, desconhecido e inferência\n(node:182608) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "set-operations.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "set operations OK\n(node:156040) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "shared-focus-persistence.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: foco persiste ao reabrir, evidência explica resposta correta, isolamento entre conversas e fatos preservados.\n(node:99104) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "shared-focus.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: foco compartilhado, quantidade, ordem, propriedade, localidade, entidade, explicação, estatística e ausência de foco.\n(node:157188) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "smoke.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: treinamento, inferência e fluxo de 9 etapas\nOK: conhecimento explícito CRUD, import/export, resposta separada dos pesos\n"
+  },
+  {
+    "file": "sound-context-v0305.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "v0.30.5: contexto animal, consulta de som, prioridade da entidade e templates OK\n(node:148848) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "sound-wording.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Cachorro late. Esse som pode ser representado por “au au”.\nGato mia. Esse som pode ser representado por “miau”.\nVaca muge. Esse som pode ser representado por “muuu”.\nOK: atualização do texto padrão, consultas, preservação dos fatos e das personalizações.\n(node:121524) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "spelling-clarification.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Sim A bandeira de Paraíba tem as cores vermelho.\nisto A bandeira de Paraíba tem as cores vermelho.\nisso A bandeira de Paraíba tem as cores vermelho.\nexatamente A bandeira de Paraíba tem as cores vermelho.\nha claro Paraíba, acabei escrevendo errado. A bandeira de Paraíba tem as cores vermelho.\nOK: erros, confirmações naturais, rejeição, mudança de assunto, sigla e preservação dos fatos.\n(node:22876) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "spelling-context.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: mesma grafia, contextos distintos, pergunta atual, propriedade, anáfora, empate, troca de assunto e confirmação sem aprender fatos.\n(node:150880) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "spelling-persistence.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: confirmação persiste após reabrir SQLite e histórico mantém a fala original.\n(node:113304) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "sqlite.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:117048) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\r\n  binding.unlink(getValidatedPath(path));\r\n          ^\r\n\r\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-sqlite-gmUBG9\\test.db'\r\n    at unlinkSync (node:fs:1953:11)\r\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\r\n    at rimrafSync (node:internal/fs/rimraf:196:7)\r\n    at node:internal/fs/rimraf:254:9\r\n    at Array.forEach (<anonymous>)\r\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\r\n    at rimrafSync (node:internal/fs/rimraf:194:7)\r\n    at rmSync (node:fs:1248:10)\r\n    at file:///C:/workspace/mylittlia/tests/sqlite.test.mjs:31:13\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-sqlite-gmUBG9\\\\test.db'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "statistics-v0293.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: v0.29.3 média, mediana, do meio, contexto, dados faltantes e limpeza do campo\n(node:91356) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "structured-teaching.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: ensino numerico -> pendencia -> aprovacao -> relacionamentos -> ranking\n(node:113268) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "teaching-audit-ui-v0283.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "node:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: The input did not match the regular expression /pendingReviewButton\\.className = 'training-entry-button review-entry-button'/. Input:\r\n\r\n'// v0.17 — Alterna entre conversar e ensinar sem destruir componentes existentes.\\r\\n' +\r\n  '// A mudança de tela preserva o estado, o histórico e os controles já inicializados.\\r\\n' +\r\n  \"const main = document.querySelector('main.shell');\\r\\n\" +\r\n  \"const sections = Array.from(main.children).filter(element => element.tagName === 'SECTION');\\r\\n\" +\r\n  \"const trainingIds = new Set(['knowledge-panel','relations-panel','training-panel','generative-lab']);\\r\\n\" +\r\n  \"const conversationView = document.createElement('div');\\r\\n\" +\r\n  \"conversationView.id = 'conversation-view';\\r\\n\" +\r\n  \"conversationView.className = 'mylittlia-view';\\r\\n\" +\r\n  \"const trainingView = document.createElement('div');\\r\\n\" +\r\n  \"trainingView.id = 'training-view';\\r\\n\" +\r\n  \"trainingView.className = 'mylittlia-view';\\r\\n\" +\r\n  'trainingView.hidden = true;\\r\\n' +\r\n  '\\r\\n' +\r\n  'for (const section of sections) {\\r\\n' +\r\n  '  (trainingIds.has(section.id) ? trainingView : conversationView).appendChild(section);\\r\\n' +\r\n  '}\\r\\n' +\r\n  \"const footer = main.querySelector('footer');\\r\\n\" +\r\n  'main.insertBefore(conversationView,footer);\\r\\n' +\r\n  'main.insertBefore(trainingView,footer);\\r\\n' +\r\n  '\\r\\n' +\r\n  \"const actions = document.createElement('div');\\r\\n\" +\r\n  \"actions.className = 'training-entry';\\r\\n\" +\r\n  \"const trainButton = document.createElement('button');\\r\\n\" +\r\n  \"trainButton.id = 'open-training';\\r\\n\" +\r\n  \"trainButton.className = 'training-entry-button';\\r\\n\" +\r\n  \"trainButton.type = 'button';\\r\\n\" +\r\n  \"trainButton.textContent = '🎓 Treinar a MylittlIA';\\r\\n\" +\r\n  \"const pendingCount = document.createElement('span');\\r\\n\" +\r\n  \"pendingCount.id = 'pending-knowledge-count';\\r\\n\" +\r\n  \"pendingCount.className = 'pending-knowledge-count';\\r\\n\" +\r\n  'pendingCount.hidden = true;\\r\\n' +\r\n  'trainButton.appendChild(pendingCount);\\r\\n' +\r\n  'let examplePending = 0;\\r\\n' +\r\n  'let chatPending = 0;\\r\\n' +\r\n  'function updatePendingBadge() {\\r\\n' +\r\n  '  const count = examplePending + chatPending;\\r\\n' +\r\n  '  pendingCount.hidden = count === 0;\\r\\n' +\r\n  \"  pendingCount.textContent = `${count} pendente${count === 1 ? '' : 's'}`;\\r\\n\" +\r\n  \"  trainButton.classList.toggle('has-pending-knowledge', count > 0);\\r\\n\" +\r\n  \"  document.getElementById('open-pending-review')?.classList.toggle('has-pending-knowledge', count > 0);\\r\\n\" +\r\n  \"  trainButton.title = count ? `${count} conhecimentos aguardando revisão` : '';\\r\\n\" +\r\n  '}\\r\\n' +\r\n  \"window.addEventListener('mylittlia:pending-examples', event => {\\r\\n\" +\r\n  '  examplePending=Math.max(0,Number(event.detail?.count)||0);updatePendingBadge();\\r\\n' +\r\n  '});\\r\\n' +\r\n  \"window.addEventListener('mylittlia:pending-conversation-teachings', event => {\\r\\n\" +\r\n  '  chatPending=Math.max(0,Number(event.detail?.count)||0);updatePendingBadge();\\r\\n' +\r\n  '});\\r\\n' +\r\n  'actions.appendChild(trainButton);\\r\\n' +\r\n  'conversationView.appendChild(actions);\\r\\n' +\r\n  '\\r\\n' +\r\n  \"const trainingHeader = document.createElement('section');\\r\\n\" +\r\n  \"trainingHeader.className = 'panel training-view-header';\\r\\n\" +\r\n  `trainingHeader.innerHTML = '<div><span class=\"eyebrow\">ÁREA DE ENSINO</span><h2>Treinar a MylittlIA</h2><p class=\"hint\">Ensine conhecimentos, consulte exemplos e acompanhe o treinamento neural.</p></div>';\\r\\n` +\r\n  \"const pendingReviewButton = document.createElement('button');\\r\\n\" +\r\n  \"pendingReviewButton.id = 'open-pending-review';\\r\\n\" +\r\n  \"pendingReviewButton.type = 'button';\\r\\n\" +\r\n  \"pendingReviewButton.className = 'secondary review-entry-button';\\r\\n\" +\r\n  \"pendingReviewButton.textContent = 'Cadastrar conhecimento';\\r\\n\" +\r\n  'trainingHeader.appendChild(pendingReviewButton);\\r\\n' +\r\n  \"const backButton = document.createElement('button');\\r\\n\" +\r\n  \"backButton.id = 'back-to-chat';\\r\\n\" +\r\n  \"backButton.className = 'training-entry-button';\\r\\n\" +\r\n  \"backButton.type = 'button';\\r\\n\" +\r\n  \"backButton.textContent = '← Voltar à conversa';\\r\\n\" +\r\n  'trainingHeader.appendChild(backButton);\\r\\n' +\r\n  'trainingView.prepend(trainingHeader);\\r\\n' +\r\n  '\\r\\n' +\r\n  'function showView(view) {\\r\\n' +\r\n  \"  const isTraining = view === 'training';\\r\\n\" +\r\n  '  conversationView.hidden = isTraining;\\r\\n' +\r\n  '  trainingView.hidden = !isTraining;\\r\\n' +\r\n  \"  trainButton.setAttribute('aria-expanded', String(isTraining));\\r\\n\" +\r\n  \"  window.scrollTo({top: 0, behavior: 'instant'});\\r\\n\" +\r\n  '}\\r\\n' +\r\n  \"trainButton.addEventListener('click', () => showView('training'));\\r\\n\" +\r\n  \"backButton.addEventListener('click', () => showView('conversation'));\\r\\n\" +\r\n  \"pendingReviewButton.addEventListener('click', () => {\\r\\n\" +\r\n  \"  showView('training');\\r\\n\" +\r\n  \"  const panel = document.getElementById('pending-review-panel');\\r\\n\" +\r\n  \"  panel?.scrollIntoView({behavior:'smooth',block:'start'});\\r\\n\" +\r\n  \"  window.dispatchEvent(new Event('mylittlia:open-pending-review'));\\r\\n\" +\r\n  '});\\r\\n' +\r\n  '\\r\\n' +\r\n  '// Atalhos de consulta agora aparecem no alto da área de ensino.\\r\\n' +\r\n  \"const knowledgePanel = document.getElementById('knowledge-panel');\\r\\n\" +\r\n  \"const labPanel = document.getElementById('generative-lab');\\r\\n\" +\r\n  \"const shortcuts = document.createElement('div');\\r\\n\" +\r\n  \"shortcuts.className = 'training-shortcuts';\\r\\n\" +\r\n  \"shortcuts.innerHTML = '<strong>Ir para</strong>';\\r\\n\" +\r\n  'for (const [label, target] of [\\r\\n' +\r\n  \"  ['Cadastrar conhecimento', document.getElementById('pending-review-panel')],\\r\\n\" +\r\n  \"  ['Conhecimentos', knowledgePanel],\\r\\n\" +\r\n  \"  ['Exemplos e memória', document.getElementById('gen-examples-details')],\\r\\n\" +\r\n  \"  ['Treinamento neural', labPanel]\\r\\n\" +\r\n  ']) {\\r\\n' +\r\n  '  if (!target) continue;\\r\\n' +\r\n  \"  const button = document.createElement('button');\\r\\n\" +\r\n  \"  button.className = 'secondary';\\r\\n\" +\r\n  \"  button.type = 'button';\\r\\n\" +\r\n  '  button.textContent = label;\\r\\n' +\r\n  \"  button.addEventListener('click', () => {\\r\\n\" +\r\n  \"    if (target.tagName === 'DETAILS') target.open = true;\\r\\n\" +\r\n  \"    target.scrollIntoView({ behavior: 'smooth', block: 'start' });\\r\\n\" +\r\n  '  });\\r\\n' +\r\n  '  shortcuts.appendChild(button);\\r\\n' +\r\n  '}\\r\\n' +\r\n  'trainingHeader.after(shortcuts);\\r\\n'\r\n\r\n    at file:///C:/workspace/mylittlia/tests/teaching-audit-ui-v0283.test.mjs:6:8\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: true,\r\n  code: 'ERR_ASSERTION',\r\n  actual: '// v0.17 — Alterna entre conversar e ensinar sem destruir componentes existentes.\\r\\n' +\r\n    '// A mudança de tela preserva o estado, o histórico e os controles já inicializados.\\r\\n' +\r\n    \"const main = document.querySelector('main.shell');\\r\\n\" +\r\n    \"const sections = Array.from(main.children).filter(element => element.tagName === 'SECTION');\\r\\n\" +\r\n    \"const trainingIds = new Set(['knowledge-panel','relations-panel','training-panel','generative-lab']);\\r\\n\" +\r\n    \"const conversationView = document.createElement('div');\\r\\n\" +\r\n    \"conversationView.id = 'conversation-view';\\r\\n\" +\r\n    \"conversationView.className = 'mylittlia-view';\\r\\n\" +\r\n    \"const trainingView = document.createElement('div');\\r\\n\" +\r\n    \"trainingView.id = 'training-view';\\r\\n\" +\r\n    \"trainingView.className = 'mylittlia-view';\\r\\n\" +\r\n    'trainingView.hidden = true;\\r\\n' +\r\n    '\\r\\n' +\r\n    'for (const section of sections) {\\r\\n' +\r\n    '  (trainingIds.has(section.id) ? trainingView : conversationView).appendChild(section);\\r\\n' +\r\n    '}\\r\\n' +\r\n    \"const footer = main.querySelector('footer');\\r\\n\" +\r\n    'main.insertBefore(conversationView,footer);\\r\\n' +\r\n    'main.insertBefore(trainingView,footer);\\r\\n' +\r\n    '\\r\\n' +\r\n    \"const actions = document.createElement('div');\\r\\n\" +\r\n    \"actions.className = 'training-entry';\\r\\n\" +\r\n    \"const trainButton = document.createElement('button');\\r\\n\" +\r\n    \"trainButton.id = 'open-training';\\r\\n\" +\r\n    \"trainButton.className = 'training-entry-button';\\r\\n\" +\r\n    \"trainButton.type = 'button';\\r\\n\" +\r\n    \"trainButton.textContent = '🎓 Treinar a MylittlIA';\\r\\n\" +\r\n    \"const pendingCount = document.createElement('span');\\r\\n\" +\r\n    \"pendingCount.id = 'pending-knowledge-count';\\r\\n\" +\r\n    \"pendingCount.className = 'pending-knowledge-count';\\r\\n\" +\r\n    'pendingCount.hidden = true;\\r\\n' +\r\n    'trainButton.appendChild(pendingCount);\\r\\n' +\r\n    'let examplePending = 0;\\r\\n' +\r\n    'let chatPending = 0;\\r\\n' +\r\n    'function updatePendingBadge() {\\r\\n' +\r\n    '  const count = examplePending + chatPending;\\r\\n' +\r\n    '  pendingCount.hidden = count === 0;\\r\\n' +\r\n    \"  pendingCount.textContent = `${count} pendente${count === 1 ? '' : 's'}`;\\r\\n\" +\r\n    \"  trainButton.classList.toggle('has-pending-knowledge', count > 0);\\r\\n\" +\r\n    \"  document.getElementById('open-pending-review')?.classList.toggle('has-pending-knowledge', count > 0);\\r\\n\" +\r\n    \"  trainButton.title = count ? `${count} conhecimentos aguardando revisão` : '';\\r\\n\" +\r\n    '}\\r\\n' +\r\n    \"window.addEventListener('mylittlia:pending-examples', event => {\\r\\n\" +\r\n    '  examplePending=Math.max(0,Number(event.detail?.count)||0);updatePendingBadge();\\r\\n' +\r\n    '});\\r\\n' +\r\n    \"window.addEventListener('mylittlia:pending-conversation-teachings', event => {\\r\\n\" +\r\n    '  chatPending=Math.max(0,Number(event.detail?.count)||0);updatePendingBadge();\\r\\n' +\r\n    '});\\r\\n' +\r\n    'actions.appendChild(trainButton);\\r\\n' +\r\n    'conversationView.appendChild(actions);\\r\\n' +\r\n    '\\r\\n' +\r\n    \"const trainingHeader = document.createElement('section');\\r\\n\" +\r\n    \"trainingHeader.className = 'panel training-view-header';\\r\\n\" +\r\n    `trainingHeader.innerHTML = '<div><span class=\"eyebrow\">ÁREA DE ENSINO</span><h2>Treinar a MylittlIA</h2><p class=\"hint\">Ensine conhecimentos, consulte exemplos e acompanhe o treinamento neural.</p></div>';\\r\\n` +\r\n    \"const pendingReviewButton = document.createElement('button');\\r\\n\" +\r\n    \"pendingReviewButton.id = 'open-pending-review';\\r\\n\" +\r\n    \"pendingReviewButton.type = 'button';\\r\\n\" +\r\n    \"pendingReviewButton.className = 'secondary review-entry-button';\\r\\n\" +\r\n    \"pendingReviewButton.textContent = 'Cadastrar conhecimento';\\r\\n\" +\r\n    'trainingHeader.appendChild(pendingReviewButton);\\r\\n' +\r\n    \"const backButton = document.createElement('button');\\r\\n\" +\r\n    \"backButton.id = 'back-to-chat';\\r\\n\" +\r\n    \"backButton.className = 'training-entry-button';\\r\\n\" +\r\n    \"backButton.type = 'button';\\r\\n\" +\r\n    \"backButton.textContent = '← Voltar à conversa';\\r\\n\" +\r\n    'trainingHeader.appendChild(backButton);\\r\\n' +\r\n    'trainingView.prepend(trainingHeader);\\r\\n' +\r\n    '\\r\\n' +\r\n    'function showView(view) {\\r\\n' +\r\n    \"  const isTraining = view === 'training';\\r\\n\" +\r\n    '  conversationView.hidden = isTraining;\\r\\n' +\r\n    '  trainingView.hidden = !isTraining;\\r\\n' +\r\n    \"  trainButton.setAttribute('aria-expanded', String(isTraining));\\r\\n\" +\r\n    \"  window.scrollTo({top: 0, behavior: 'instant'});\\r\\n\" +\r\n    '}\\r\\n' +\r\n    \"trainButton.addEventListener('click', () => showView('training'));\\r\\n\" +\r\n    \"backButton.addEventListener('click', () => showView('conversation'));\\r\\n\" +\r\n    \"pendingReviewButton.addEventListener('click', () => {\\r\\n\" +\r\n    \"  showView('training');\\r\\n\" +\r\n    \"  const panel = document.getElementById('pending-review-panel');\\r\\n\" +\r\n    \"  panel?.scrollIntoView({behavior:'smooth',block:'start'});\\r\\n\" +\r\n    \"  window.dispatchEvent(new Event('mylittlia:open-pending-review'));\\r\\n\" +\r\n    '});\\r\\n' +\r\n    '\\r\\n' +\r\n    '// Atalhos de consulta agora aparecem no alto da área de ensino.\\r\\n' +\r\n    \"const knowledgePanel = document.getElementById('knowledge-panel');\\r\\n\" +\r\n    \"const labPanel = document.getElementById('generative-lab');\\r\\n\" +\r\n    \"const shortcuts = document.createElement('div');\\r\\n\" +\r\n    \"shortcuts.className = 'training-shortcuts';\\r\\n\" +\r\n    \"shortcuts.innerHTML = '<strong>Ir para</strong>';\\r\\n\" +\r\n    'for (const [label, target] of [\\r\\n' +\r\n    \"  ['Cadastrar conhecimento', document.getElementById('pending-review-panel')],\\r\\n\" +\r\n    \"  ['Conhecimentos', knowledgePanel],\\r\\n\" +\r\n    \"  ['Exemplos e memória', document.getElementById('gen-examples-details')],\\r\\n\" +\r\n    \"  ['Treinamento neural', labPanel]\\r\\n\" +\r\n    ']) {\\r\\n' +\r\n    '  if (!target) continue;\\r\\n' +\r\n    \"  const button = document.createElement('button');\\r\\n\" +\r\n    \"  button.className = 'secondary';\\r\\n\" +\r\n    \"  button.type = 'button';\\r\\n\" +\r\n    '  button.textContent = label;\\r\\n' +\r\n    \"  button.addEventListener('click', () => {\\r\\n\" +\r\n    \"    if (target.tagName === 'DETAILS') target.open = true;\\r\\n\" +\r\n    \"    target.scrollIntoView({ behavior: 'smooth', block: 'start' });\\r\\n\" +\r\n    '  });\\r\\n' +\r\n    '  shortcuts.appendChild(button);\\r\\n' +\r\n    '}\\r\\n' +\r\n    'trainingHeader.after(shortcuts);\\r\\n',\r\n  expected: /pendingReviewButton\\.className = 'training-entry-button review-entry-button'/,\r\n  operator: 'match'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "teaching-audit-v0283.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK v0.28.3: dupla validação, auditoria antiga, rejeição, confirmação manual e salvaguarda do SQLite\n(node:34384) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "teaching-intent-priority.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: saudações e novas perguntas não viram ensino; fatos explícitos são registrados\n(node:141052) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "teaching-list-context.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: lista numerada ensinada após convite e armazenada somente como pendência\n(node:93308) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "temporal.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: contextual calendar operations\n(node:10556) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "topic-summary-v02913.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "PASS: resumos por assunto do SQLite e contagem de entidades sem duplicidade\n(node:105608) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "train-intent-cli-v0291.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:85684) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\nAssertionError [ERR_ASSERTION]: (node:150800) ExperimentalWarning: SQLite is an experimental feature and might change at any time\r\n(Use `node --trace-warnings ...` to show where the warning was created)\r\nErro ao migrar o banco: duplicate column name: batch_id\r\n\r\n\r\n1 !== 0\r\n\r\n    at file:///C:/workspace/mylittlia/tests/train-intent-cli-v0291.test.mjs:31:10\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25)\r\n    at async onImport.tracePromise.__proto__ (node:internal/modules/esm/loader:644:26)\r\n    at async asyncRunEntryPointWithESMLoader (node:internal/modules/run_main:117:5) {\r\n  generatedMessage: false,\r\n  code: 'ERR_ASSERTION',\r\n  actual: 1,\r\n  expected: 0,\r\n  operator: 'strictEqual'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "ui-language.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "Interface: mensagens amigáveis verificadas.\n"
+  },
+  {
+    "file": "weight-legacy-id.test.mjs",
+    "ok": true,
+    "status": 0,
+    "output": "OK: IDs SQL legados de 32 caracteres aceitos e peso persistido\n(node:23492) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\n"
+  },
+  {
+    "file": "weighted.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "(node:157820) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:fs:1953\r\n  binding.unlink(getValidatedPath(path));\r\n          ^\r\n\r\nError: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-v09-7TUvDY\\mylittlia.db'\r\n    at unlinkSync (node:fs:1953:11)\r\n    at _unlinkSync (node:internal/fs/rimraf:215:14)\r\n    at rimrafSync (node:internal/fs/rimraf:196:7)\r\n    at node:internal/fs/rimraf:254:9\r\n    at Array.forEach (<anonymous>)\r\n    at _rmdirSync (node:internal/fs/rimraf:251:7)\r\n    at rimrafSync (node:internal/fs/rimraf:194:7)\r\n    at rmSync (node:fs:1248:10)\r\n    at file:///C:/workspace/mylittlia/tests/weighted.test.mjs:47:5\r\n    at ModuleJob.run (node:internal/modules/esm/module_job:274:25) {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-v09-7TUvDY\\\\mylittlia.db'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  },
+  {
+    "file": "word-generative.test.mjs",
+    "ok": false,
+    "status": 1,
+    "output": "OK: tokens por palavra, treino SGD, loss, geração e checkpoint\n(node:59620) ExperimentalWarning: SQLite is an experimental feature and might change at any time\n(Use `node --trace-warnings ...` to show where the warning was created)\nnode:internal/modules/run_main:123\r\n    triggerUncaughtException(\r\n    ^\r\n\r\n[Error: EBUSY: resource busy or locked, unlink 'C:\\Users\\yomar\\AppData\\Local\\Temp\\mylittlia-word-YcmnQN\\models.db-shm'] {\r\n  errno: -4082,\r\n  code: 'EBUSY',\r\n  syscall: 'unlink',\r\n  path: 'C:\\\\Users\\\\yomar\\\\AppData\\\\Local\\\\Temp\\\\mylittlia-word-YcmnQN\\\\models.db-shm'\r\n}\r\n\r\nNode.js v22.16.0\r\n"
+  }
+]

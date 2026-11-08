@@ -1,0 +1,35 @@
+import assert from 'node:assert/strict';
+import {randomUUID} from 'node:crypto';
+import {mkdtempSync,rmSync} from 'node:fs';
+import {join} from 'node:path';
+import {tmpdir} from 'node:os';
+import {openDatabase} from '../server/persistence/database.js';
+import {sendChatMessage} from '../server/conversation/chat.js';
+import {getSemanticState} from '../server/reasoning/semantic-core.js';
+const folder=mkdtempSync(join(tmpdir(),'mylittlia-ellipsis-'));
+const db=openDatabase(join(folder,'test.db'),{seed:false});
+const add=(s,p,o)=>db.prepare('INSERT INTO knowledge_relations(id,subject,predicate,object,source_type) VALUES (?,?,?,?,?)').run(randomUUID(),s,p,o,'test');
+try {
+  add('gato','bebe','agua');
+  add('gato','pode_ingerir','leite_com_restricoes');
+  add('cachorro','bebe','agua');
+  let r=sendChatMessage(db,{text:'O que o gato bebe?'}),id=r.conversationId;
+  assert.match(r.reply,/gato bebe água/i);
+  assert.equal(getSemanticState(db,id).operation,'relational-query');
+  r=sendChatMessage(db,{conversationId:id,text:'E leite?'});
+  assert.match(r.reply,/leite.*restriç/i);
+  assert.equal(r.result.interpretation.ellipsis,true);
+  assert.equal(getSemanticState(db,id).relationObject,'leite');
+  r=sendChatMessage(db,{conversationId:id,text:'E água?'});
+  assert.match(r.reply,/gato bebe água/i);
+  r=sendChatMessage(db,{conversationId:id,text:'E o cachorro?'});
+  assert.match(r.reply,/cachorro bebe água/i);
+  assert.equal(getSemanticState(db,id).entity,'cachorro');
+  r=sendChatMessage(db,{conversationId:id,text:'Qual é a capital de Pernambuco?'});
+  assert.equal(getSemanticState(db,id).operation,'lookup');
+  r=sendChatMessage(db,{conversationId:id,text:'E leite?'});
+  assert.notEqual(r.result.interpretation?.parser,'ellipsis-resolver-v1','Não usar gato depois de mudança de assunto');
+  let second=sendChatMessage(db,{text:'O que o cachorro bebe?'});
+  assert.match(second.reply,/cachorro bebe água/i);
+  console.log('PASS: pergunta relacional, elipse, qualificações, troca de assunto');
+} finally {db.close();rmSync(folder,{recursive:true,force:true});}

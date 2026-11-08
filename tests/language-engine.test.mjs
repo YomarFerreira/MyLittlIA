@@ -1,0 +1,12 @@
+import assert from 'node:assert/strict';
+import {presentResponse} from '../server/language/language-engine.js';
+const sample={kind:'numeric-ranking',answer:'Esta conclusão não garante o extremo de todo o estado. Incluí todos os registros disponíveis, mas há datas diferentes ou desconhecidas.',interpretation:{entity:'pernambuco',metric:'area',singular:true,position:1,sort:'ascending',count:8,availableYears:[0,2025],includeAll:true,ranking:[{name:'lagoa_grande',value:1850.07,year:0}]}};
+const r=presentResponse(sample);
+assert.match(r.answer,/Lagoa Grande é a menor/);
+assert.match(r.answer,/não significa que seja realmente a menor cidade/);
+assert.doesNotMatch(r.answer,/extremo|ranking temporalmente|registros disponíveis|ano de referência/);
+assert.match(r.answer,/épocas diferentes/);
+assert.equal(r.inferenceAnswer,sample.answer);
+assert.equal(r.interpretation.languageEngine,'natural-pt-br-v1');
+assert.equal(presentResponse({kind:'other',answer:'Oi'}).answer,'Oi');
+console.log('language engine OK');

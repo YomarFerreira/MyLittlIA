@@ -1,0 +1,132 @@
+{
+  "examples": [
+    {
+      "text": "o que o gato bebe",
+      "label": "bebida"
+    },
+    {
+      "text": "o que o cachorro bebe",
+      "label": "bebida"
+    },
+    {
+      "text": "qual bebida o gato toma",
+      "label": "bebida"
+    },
+    {
+      "text": "gato bebe o que",
+      "label": "bebida"
+    },
+    {
+      "text": "o que um cachorro bebe",
+      "label": "bebida"
+    },
+    {
+      "text": "o que o gato come",
+      "label": "comida"
+    },
+    {
+      "text": "o que o cachorro come",
+      "label": "comida"
+    },
+    {
+      "text": "qual comida o gato come",
+      "label": "comida"
+    },
+    {
+      "text": "cachorro come o que",
+      "label": "comida"
+    },
+    {
+      "text": "qual é a capital de pernambuco",
+      "label": "capital"
+    },
+    {
+      "text": "qual a capital do brasil",
+      "label": "capital"
+    },
+    {
+      "text": "qual é a capital de alagoas",
+      "label": "capital"
+    },
+    {
+      "text": "qual é a capital da bahia",
+      "label": "capital"
+    },
+    {
+      "text": "me diga a capital de alagoas",
+      "label": "capital"
+    },
+    {
+      "text": "qual a capital de são paulo",
+      "label": "capital"
+    },
+    {
+      "text": "oi",
+      "label": "saudacao"
+    },
+    {
+      "text": "olá",
+      "label": "saudacao"
+    },
+    {
+      "text": "bom dia",
+      "label": "saudacao"
+    },
+    {
+      "text": "boa tarde",
+      "label": "saudacao"
+    },
+    {
+      "text": "boa noite",
+      "label": "saudacao"
+    },
+    {
+      "text": "qual seu nome",
+      "label": "nome"
+    },
+    {
+      "text": "como você se chama",
+      "label": "nome"
+    },
+    {
+      "text": "qual é o seu nome",
+      "label": "nome"
+    },
+    {
+      "text": "qual a cor do gato",
+      "label": "outro"
+    },
+    {
+      "text": "o gato bebe leite",
+      "label": "outro"
+    },
+    {
+      "text": "o que o gato bebe é branco",
+      "label": "outro"
+    },
+    {
+      "text": "quanto é dois mais dois",
+      "label": "outro"
+    },
+    {
+      "text": "qual é a idade do gato",
+      "label": "outro"
+    },
+    {
+      "text": "qual o clima amanhã",
+      "label": "outro"
+    }
+  ],
+  "knowledge": [
+    {
+      "question": "Qual é a capital do Rio de Janeiro?",
+      "answer": "A capital do estado do Rio de Janeiro é Rio de Janeiro.",
+      "intent": "capital"
+    },
+    {
+      "question": "Qual é a capital de Sergipe?",
+      "answer": "A capital de Sergipe é Aracaju.",
+      "intent": "capital"
+    }
+  ]
+}

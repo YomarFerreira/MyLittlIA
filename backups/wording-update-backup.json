@@ -1,0 +1,21 @@
+{
+  "backup": "C:\\workspace\\mylittlia\\backups\\database-before-0.34.2-20261108T225821Z.sqlite",
+  "checks": {
+    "knowledge": {
+      "count": 139,
+      "sha256": "ccd1d671d44a5382b5dce92a5a37a86bc5ac2617afd31532954dd0b45ab685f9"
+    },
+    "knowledge_relations": {
+      "count": 4723,
+      "sha256": "f2699026b415990a36d9f357ff39ca7d515d7e1fb3a128cd8cc2ae0d4c3f9228"
+    },
+    "entity_facts": {
+      "count": 948,
+      "sha256": "18212a71510a6cf3fca0aa30a345f88ffb4e8b8db5b5790cb4b731064f3b62fe"
+    },
+    "neural_models": {
+      "count": 2,
+      "sha256": "2ac4d331f8df72d3766e4023432774134964ed32e21f832556beea5cf2a836b8"
+    }
+  }
+}

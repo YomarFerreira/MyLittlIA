@@ -1,0 +1,31 @@
+import assert from 'node:assert/strict';
+import {mkdtempSync,rmSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {openDatabase} from '../server/persistence/database.js';
+import {sendChatMessage} from '../server/conversation/chat.js';
+import {listConversationalTeachings,reviewConversationalTeaching} from '../server/learning/teachings.js';
+import {parseMunicipalAreaTeaching} from '../server/learning/structured-teaching.js';
+const dir=mkdtempSync(join(tmpdir(),'mylittlia-structured-'));
+try {
+ const db=openDatabase(join(dir,'test.db'));
+ const initial=sendChatMessage(db,{text:'E as maiores cidades de PE?'});
+ const second=sendChatMessage(db,{conversationId:initial.conversationId,text:'em extensão'});
+ assert.match(second.reply,/aprender/i);
+ const list='Sim, posso. Segue uma lista.\n1. Petrolina: 4.561,87 km²\n2. Floresta: 3.644,169 km²\n3. Santa Maria da Boa Vista: 3.000,774 km²';
+ assert.equal(parseMunicipalAreaTeaching('Maiores cidades de PE por extensão',list).length,3);
+ const taught=sendChatMessage(db,{conversationId:initial.conversationId,text:list});
+ assert.equal(taught.result.kind,'conversation-teaching-pending');
+ assert.equal(db.prepare("SELECT count(*) n FROM knowledge_relations WHERE predicate='area_km2'").get().n,0);
+ const pending=listConversationalTeachings(db).find(item=>item.status==='pending');
+ assert.ok(pending);
+ reviewConversationalTeaching(db,pending.id,'approve');
+ assert.equal(db.prepare("SELECT count(*) n FROM knowledge_relations WHERE predicate='area_km2'").get().n,3);
+ assert.equal(db.prepare("SELECT count(*) n FROM knowledge_relations WHERE predicate='pertence_a'").get().n,3);
+ const q=sendChatMessage(db,{text:'Quais os maiores municípios de Pernambuco por extensão?'});
+ assert.match(q.reply,/Petrolina/i);
+ assert.match(q.reply,/4\.561,87/i);
+ assert.match(q.reply,/apenas as 3 cidades|apenas as [0-9]+ cidades/i);
+ db.close();
+ console.log('OK: ensino numerico -> pendencia -> aprovacao -> relacionamentos -> ranking');
+}finally{rmSync(dir,{recursive:true,force:true});}

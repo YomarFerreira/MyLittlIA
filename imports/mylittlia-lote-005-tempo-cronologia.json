@@ -1,0 +1,152 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "lot": "005",
+  "title": "Tempo, cronologia e unidades — lote 005",
+  "compatible_with": "MylittlIA v0.29.7",
+  "relations": [
+    {
+      "subject": "Milissegundo",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Segundo",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Minuto",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Hora",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Dia",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Semana",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Mês",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Ano",
+      "predicate": "e_um",
+      "object": "Unidade de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Cronologia",
+      "predicate": "e_um",
+      "object": "Ordenação temporal",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Carimbo de data e hora",
+      "predicate": "e_um",
+      "object": "Registro temporal",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "UTC",
+      "predicate": "e_um",
+      "object": "Padrão de referência de tempo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Fuso horário",
+      "predicate": "e_um",
+      "object": "Deslocamento em relação ao UTC",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Milissegundo",
+      "predicate": "caracteristica",
+      "object": "Milésima parte de um segundo",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Segundo",
+      "predicate": "caracteristica",
+      "object": "Mil milissegundos",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Minuto",
+      "predicate": "caracteristica",
+      "object": "Sessenta segundos",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Hora",
+      "predicate": "caracteristica",
+      "object": "Sessenta minutos",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Dia civil",
+      "predicate": "caracteristica",
+      "object": "Vinte e quatro horas em condições usuais",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    },
+    {
+      "subject": "Ano bissexto",
+      "predicate": "caracteristica",
+      "object": "Possui trezentos e sessenta e seis dias",
+      "category": "tempo",
+      "source": "",
+      "note": "Conhecimento introdutório sujeito a contexto e exceções."
+    }
+  ]
+}

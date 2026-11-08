@@ -1,0 +1,6 @@
+CREATE TABLE IF NOT EXISTS neural_intent_models (
+  id INTEGER PRIMARY KEY CHECK(id=1),
+  version TEXT NOT NULL,
+  weights TEXT NOT NULL,
+  trained_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP
+);

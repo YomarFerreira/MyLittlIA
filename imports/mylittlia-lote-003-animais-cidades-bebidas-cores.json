@@ -1,0 +1,248 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "lot": "003",
+  "title": "Animais, geografia, bebidas e cores — lote 003",
+  "compatible_with": "MylittlIA v0.29.4",
+  "relations": [
+    {
+      "subject": "Capivara",
+      "predicate": "e_um",
+      "object": "Mamífero",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Anta",
+      "predicate": "e_um",
+      "object": "Mamífero",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Tamanduá",
+      "predicate": "e_um",
+      "object": "Mamífero",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Peixe-boi",
+      "predicate": "e_um",
+      "object": "Mamífero",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Jacaré",
+      "predicate": "e_um",
+      "object": "Réptil",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Tartaruga",
+      "predicate": "e_um",
+      "object": "Réptil",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Jiboia",
+      "predicate": "e_um",
+      "object": "Réptil",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Sapo",
+      "predicate": "e_um",
+      "object": "Anfíbio",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Borboleta",
+      "predicate": "e_um",
+      "object": "Inseto",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Abelha",
+      "predicate": "e_um",
+      "object": "Inseto",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Polvo",
+      "predicate": "e_um",
+      "object": "Molusco",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Caracol",
+      "predicate": "e_um",
+      "object": "Molusco",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Coruja",
+      "predicate": "e_um",
+      "object": "Ave",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Ema",
+      "predicate": "e_um",
+      "object": "Ave",
+      "category": "animais",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Vitória",
+      "predicate": "localizado_em",
+      "object": "Espírito Santo",
+      "category": "geografia",
+      "source": "https://cidades.ibge.gov.br/",
+      "note": "Vínculo município/UF: conferir município e código no IBGE Cidades quando necessário."
+    },
+    {
+      "subject": "Campina Grande",
+      "predicate": "localizado_em",
+      "object": "Paraíba",
+      "category": "geografia",
+      "source": "https://cidades.ibge.gov.br/",
+      "note": "Vínculo município/UF: conferir município e código no IBGE Cidades quando necessário."
+    },
+    {
+      "subject": "Porto Seguro",
+      "predicate": "localizado_em",
+      "object": "Bahia",
+      "category": "geografia",
+      "source": "https://cidades.ibge.gov.br/",
+      "note": "Vínculo município/UF: conferir município e código no IBGE Cidades quando necessário."
+    },
+    {
+      "subject": "Foz do Iguaçu",
+      "predicate": "localizado_em",
+      "object": "Paraná",
+      "category": "geografia",
+      "source": "https://cidades.ibge.gov.br/",
+      "note": "Vínculo município/UF: conferir município e código no IBGE Cidades quando necessário."
+    },
+    {
+      "subject": "Juazeiro do Norte",
+      "predicate": "localizado_em",
+      "object": "Ceará",
+      "category": "geografia",
+      "source": "https://cidades.ibge.gov.br/",
+      "note": "Vínculo município/UF: conferir município e código no IBGE Cidades quando necessário."
+    },
+    {
+      "subject": "Limonada",
+      "predicate": "e_um",
+      "object": "Bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Água de coco",
+      "predicate": "e_um",
+      "object": "Bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Suco de laranja",
+      "predicate": "e_um",
+      "object": "Bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Achocolatado",
+      "predicate": "e_um",
+      "object": "Bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Chá de camomila",
+      "predicate": "e_um",
+      "object": "Bebida",
+      "category": "bebidas",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Turquesa",
+      "predicate": "e_um",
+      "object": "Cor",
+      "category": "cores",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Ciano",
+      "predicate": "e_um",
+      "object": "Cor",
+      "category": "cores",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Magenta",
+      "predicate": "e_um",
+      "object": "Cor",
+      "category": "cores",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Bege",
+      "predicate": "e_um",
+      "object": "Cor",
+      "category": "cores",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Cinza",
+      "predicate": "e_um",
+      "object": "Cor",
+      "category": "cores",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    },
+    {
+      "subject": "Lilás",
+      "predicate": "e_um",
+      "object": "Cor",
+      "category": "cores",
+      "source": "",
+      "note": "Classificação factual introdutória; fonte documental individual não verificada."
+    }
+  ]
+}

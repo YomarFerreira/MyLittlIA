@@ -1,0 +1,76 @@
+import assert from 'node:assert/strict';
+import { randomUUID } from 'node:crypto';
+import { mkdtempSync, rmSync } from 'node:fs';
+import { join } from 'node:path';
+import { tmpdir } from 'node:os';
+import { openDatabase } from '../server/persistence/database.js';
+import { numericRankingAnswer } from '../server/reasoning/numeric-rankings.js';
+import { sendChatMessage } from '../server/conversation/chat.js';
+const dir=mkdtempSync(join(tmpdir(),'mylittlia-ranking-'));
+const db=openDatabase(join(dir,'test.db'),{seed:false});
+const add=(subject,predicate,object)=>db.prepare('INSERT INTO knowledge_relations(id,subject,predicate,object,source_type,evidence_count) VALUES (?,?,?,?,?,1)').run(randomUUID(),subject,predicate,object,'test');
+try {
+ add('cidade_a','pertence_a','pernambuco');
+ add('cidade b','pertence_a','pernambuco');
+ add('cidade_c','pertence_a','bahia');
+ add('cidade_a','area_km2','1.250,5 km2 em 2025');
+ add('cidade b','area_km2','2.500,75 km2 em 2025');
+ add('cidade_c','area_km2','8.500 km2 em 2025');
+ add('cidade_a','populacao','1.000 habitantes em 2025');
+ add('cidade b','populacao','2.000 habitantes em 2025');
+ const rank=numericRankingAnswer(db,'Quais as maiores cidades de PE em extensão?');
+ assert.equal(rank.kind,'numeric-ranking');
+ assert.equal(rank.interpretation.ranking[0].name,'cidade b');
+ assert.equal(rank.interpretation.ranking[0].value,2500.75);
+ assert.match(rank.answer,/classificação parcial/i);
+ assert.doesNotMatch(rank.answer,/cidade_c/);
+ const single=numericRankingAnswer(db,'Qual a maior cidade de Pernambuco em extensão territorial?');
+ assert.equal(single.kind,'numeric-ranking');
+ assert.equal(single.interpretation.singular,true);
+ assert.equal(single.interpretation.ranking.length,1);
+ assert.match(single.answer,/Cidade b.*2\.500,75 km²/s);
+ const singleChat=sendChatMessage(db,{text:'Qual a maior cidade de Pernambuco em extensão territorial?'});
+ assert.match(singleChat.reply,/Cidade B.*2\.500,75 km²/s);
+
+ const missing=numericRankingAnswer(db,'Quais as maiores cidades de PE por PIB?');
+ assert.equal(missing.kind,'semantic-data-gap');
+ const first=sendChatMessage(db,{text:'E as maiores cidades de PE?'});
+ assert.match(first.reply,/população.*extensão/i);
+ const second=sendChatMessage(db,{conversationId:first.conversationId,text:'em extensão'});
+ assert.match(second.reply,/Cidade B/i);
+ assert.equal(second.result.interpretation.contextAfter.criterion,'area');
+ const year=sendChatMessage(db,{conversationId:first.conversationId,text:'por população'});
+ assert.match(year.reply,/habitantes/i);
+ // Registros sem ano devem gerar ranking indicativo, sem inventar a data.
+ add('cidade_d','pertence_a','pernambuco');
+ add('cidade_e','pertence_a','pernambuco');
+ add('cidade_d','area_km2','9.000 km2');
+ add('cidade_e','area_km2','7.000 km2');
+ const mixed=numericRankingAnswer(db,'Quais as maiores cidades de PE em extensão?');
+ assert.equal(mixed.kind,'numeric-ranking');
+ assert.equal(mixed.interpretation.excludedWithoutYear,2);
+ assert.match(mixed.answer,/deixei de fora 2 medida/i);
+ // Anos explícitos diferentes não devem bloquear uma classificação possível.
+ add('cidade_f','pertence_a','pernambuco');
+ add('cidade_f','area_km2','3.333 km2 em 2024');
+ const differentYears=numericRankingAnswer(db,'Quais as maiores cidades de PE em extensão?');
+ assert.equal(differentYears.kind,'numeric-ranking');
+ assert.equal(differentYears.interpretation.year,2025);
+ assert.match(differentYears.answer,/deixei de fora 3 medida/i);
+ // A maior amostra pode ser a de ano desconhecido, sem inventar referência.
+ add('cidade_g','pertence_a','pernambuco');
+ add('cidade_h','pertence_a','pernambuco');
+ add('cidade_g','area_km2','8.000 km2');
+ add('cidade_h','area_km2','7.500 km2');
+ const unknownPeriod=numericRankingAnswer(db,'Quais as maiores cidades de PE em extensão?');
+ assert.equal(unknownPeriod.kind,'numeric-ranking');
+ assert.equal(unknownPeriod.interpretation.undated,true);
+ assert.match(unknownPeriod.answer,/não têm ano de referência/i);
+ db.prepare("DELETE FROM knowledge_relations WHERE subject IN ('cidade_a','cidade b') AND predicate='area_km2'").run();
+ const undated=numericRankingAnswer(db,'Quais as maiores cidades de PE em extensão?');
+ assert.equal(undated.kind,'numeric-ranking');
+ assert.equal(undated.interpretation.undated,true);
+ assert.match(undated.answer,/não têm ano de referência/i);
+ assert.match(undated.answer,/Cidade d/i);
+ console.log('numeric rankings OK');
+} finally {db.close();rmSync(dir,{recursive:true,force:true});}

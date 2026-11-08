@@ -1,0 +1,14 @@
+import assert from 'node:assert/strict';
+import {readFileSync} from 'node:fs';
+const views=readFileSync(new URL('../js/views.js',import.meta.url),'utf8');
+const app=readFileSync(new URL('../js/app.js',import.meta.url),'utf8');
+const css=readFileSync(new URL('../css/styles.css',import.meta.url),'utf8');
+assert.match(views,/pendingReviewButton\.className = 'secondary review-entry-button'/);
+assert.match(views,/backButton\.className = 'training-entry-button'/);
+assert.match(css,/#back-to-chat\.training-entry-button\s*\{[^}]*#eab308/);
+assert.match([...css.matchAll(/#open-pending-review\.review-entry-button\s*\{([^}]+)}/g)].at(-1)[1],/#29354e/);
+assert.match(app,/Auditar pendências/);
+assert.match(app,/review-audit-summary/);
+assert.match(app,/confirmedReview/);
+assert.match(app,/Rejeitar selecionados/);
+console.log('OK v0.28.3: botão amarelo e revisão com auditoria e confirmação');

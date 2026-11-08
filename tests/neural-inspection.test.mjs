@@ -1,0 +1,32 @@
+import assert from 'node:assert/strict';
+import {DatabaseSync} from 'node:sqlite';
+import {mkdtempSync,rmSync,readFileSync} from 'node:fs';
+import {tmpdir} from 'node:os';
+import {join} from 'node:path';
+import {configureNeuralDatabase} from '../server/persistence/neural-storage.js';
+import {trainWords,inspectWordInference} from '../server/neural/word-generative.js';
+const dir=mkdtempSync(join(tmpdir(),'mylittlia-inspect-'));
+try {
+  const db=new DatabaseSync(join(dir,'test.db'));
+  db.exec(`CREATE TABLE neural_models (kind TEXT PRIMARY KEY,model_json TEXT NOT NULL,trained_steps INTEGER NOT NULL DEFAULT 0,trained_examples INTEGER NOT NULL DEFAULT 0,updated_at TEXT NOT NULL DEFAULT CURRENT_TIMESTAMP);
+    CREATE TABLE neural_training_runs(id INTEGER PRIMARY KEY,model_kind TEXT,epochs INTEGER,example_count INTEGER,token_count INTEGER,loss_initial REAL,loss_final REAL,training_text TEXT,trained_at TEXT DEFAULT CURRENT_TIMESTAMP);
+    CREATE TABLE neural_training_metrics(run_id INTEGER,epoch INTEGER,loss REAL);`);
+  db.exec(readFileSync(new URL('../server/persistence/migrations/migration-v5.sql',import.meta.url),'utf8'));
+  configureNeuralDatabase(db);
+  const before=inspectWordInference('o gato bebe água');
+  assert.equal(before.available,false);
+  await trainWords(dir,{text:'pergunta: o que o gato bebe? resposta: água.\npergunta: o que o gato come? resposta: carne.',epochs:2});
+  const result=inspectWordInference('o gato bebe água');
+  assert.equal(result.available,true);
+  assert.equal(result.dimensions,20);
+  assert.equal(result.contextIds.length,8);
+  assert.equal(result.featureVector.length,160);
+  assert.ok(result.topPredictions.length);
+  const sumTop=result.topPredictions.reduce((n,t)=>n+t.probability,0);
+  assert.ok(sumTop>0&&sumTop<=1.000001);
+  assert.equal(result.tokens[0].embedding.length,20);
+  assert.equal(result.tokens[0].known,true);
+  assert.deepEqual(inspectWordInference('o gato bebe água').topPredictions,result.topPredictions);
+  console.log('OK: embeddings, concatenação e logits do modelo real');
+  db.close();
+} finally {rmSync(dir,{recursive:true,force:true});}

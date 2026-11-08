@@ -1,0 +1,36 @@
+import assert from 'node:assert/strict';
+import { DatabaseSync } from 'node:sqlite';
+import { randomUUID } from 'node:crypto';
+import { genericSemanticAnswer } from '../server/reasoning/generic-semantic.js';
+import { sendChatMessage } from '../server/conversation/chat.js';
+import { openDatabase } from '../server/persistence/database.js';
+import { mkdtempSync, rmSync } from 'node:fs';
+import { tmpdir } from 'node:os';
+import { join } from 'node:path';
+const dir=mkdtempSync(join(tmpdir(),'mylittlia-generic-'));
+const db=openDatabase(join(dir,'test.db'),{seed:false});
+const add=(subject,predicate,object)=>db.prepare(`INSERT INTO knowledge_relations(id,subject,predicate,object,source_type,evidence_count) VALUES(?,?,?,?,?,?)`).run(randomUUID(),subject,predicate,object,'imported',1);
+try {
+ add('rio_de_janeiro','tem_capital','rio_de_janeiro');
+ add('rio_de_janeiro','tem','municipio_populoso_de_referencia_niteroi');
+ add('rio_de_janeiro','tem','municipio_populoso_de_referencia_duque_de_caxias');
+ add('pernambuco','tem','atividade_economica_relevante_turismo');
+ add('bandeira_de_pernambuco','possui','azul');
+ add('bandeira_de_pernambuco','possui','branco');
+ const cities=genericSemanticAnswer(db,'Quais as principais cidades do Rio?');
+ assert.equal(cities.kind,'generic-semantic');
+ assert.match(cities.answer,/niteroi/);
+ assert.match(cities.answer,/não um ranking completo/);
+ assert.match(genericSemanticAnswer(db,'Qual a capital do Rio?').answer,/rio de janeiro/i);
+ assert.match(genericSemanticAnswer(db,'Quais as cores da bandeira de Pernambuco?').answer,/azul/);
+ assert.match(genericSemanticAnswer(db,'Qual a atividade econômica de PE?').answer,/turismo/);
+ assert.equal(genericSemanticAnswer(db,'Qual a maior cidade por área do Rio?').kind,'semantic-data-gap');
+ assert.equal(genericSemanticAnswer(db,'Quais empresas de Minas Gerais?'),null);
+ assert.match(sendChatMessage(db,{text:'Quais as principais cidades do Rio?'}).reply,/niteroi/);
+ add('pernambuco','tem','populacao_estimada_de_100_habitantes_em_2025');
+ add('bahia','tem','populacao_estimada_de_200_habitantes_em_2025');
+ add('sergipe','tem','populacao_estimada_de_50_habitantes_em_2025');
+ assert.match(genericSemanticAnswer(db,'Quais estados têm população maior que Pernambuco?').answer,/Bahia/);
+ assert.doesNotMatch(genericSemanticAnswer(db,'Quais estados têm população maior que Pernambuco?').answer,/Sergipe/);
+ console.log('generic semantic OK');
+} finally {db.close();rmSync(dir,{recursive:true,force:true});}

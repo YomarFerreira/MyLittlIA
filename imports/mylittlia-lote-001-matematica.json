@@ -1,0 +1,152 @@
+{
+  "schema": "mylittlia-curated-relations-v1",
+  "lot": "001",
+  "title": "Matematica e estatistica",
+  "compatible_with": "MylittlIA v0.29.3",
+  "relations": [
+    {
+      "subject": "Média aritmética",
+      "predicate": "e_um",
+      "object": "Medida de tendência central",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Mediana",
+      "predicate": "e_um",
+      "object": "Medida de tendência central",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Moda",
+      "predicate": "e_um",
+      "object": "Medida de tendência central",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Média aritmética",
+      "predicate": "caracteristica",
+      "object": "Soma dos valores dividida pela quantidade de valores",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Mediana",
+      "predicate": "caracteristica",
+      "object": "Valor central depois de ordenar os dados",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Moda",
+      "predicate": "caracteristica",
+      "object": "Valor com maior frequência no conjunto",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Mediana em conjunto ímpar",
+      "predicate": "caracteristica",
+      "object": "Valor da posição central depois da ordenação",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Mediana em conjunto par",
+      "predicate": "caracteristica",
+      "object": "Média dos dois valores centrais ordenados",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Média aritmética",
+      "predicate": "caracteristica",
+      "object": "É sensível a valores extremos",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Mediana",
+      "predicate": "caracteristica",
+      "object": "É mais resistente a valores extremos",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Conjunto com uma moda",
+      "predicate": "e_um",
+      "object": "Unimodal",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Conjunto com duas modas",
+      "predicate": "e_um",
+      "object": "Bimodal",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Média aritmética de 2 4 6",
+      "predicate": "caracteristica",
+      "object": "Igual a 4",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Mediana de 2 4 6",
+      "predicate": "caracteristica",
+      "object": "Igual a 4",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Mediana de 1 3 5 7",
+      "predicate": "caracteristica",
+      "object": "Igual a 4",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Média aritmética de 1 3 5 7",
+      "predicate": "caracteristica",
+      "object": "Igual a 4",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Moda de 2 3 3 7",
+      "predicate": "caracteristica",
+      "object": "Igual a 3",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    },
+    {
+      "subject": "Conjunto sem valores repetidos",
+      "predicate": "caracteristica",
+      "object": "Não possui moda única",
+      "category": "matematica",
+      "source": "https://openstax.org/books/introductory-statistics-2e/pages/2-5-measures-of-the-center-of-the-data",
+      "note": "Conceito ou exemplo didático; não representa execução de cálculo para outros conjuntos."
+    }
+  ]
+}
