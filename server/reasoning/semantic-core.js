@@ -56,10 +56,12 @@ function entityCatalog(db) {
   for(const row of db.prepare('SELECT DISTINCT subject FROM knowledge_relations').all())names.add(normalize(String(row.subject).replaceAll('_',' ')));
   return [...names].filter(x=>x.length>2).sort((a,b)=>b.length-a.length);
 }
-export function resolveEntity(db, text, previous=null) {
+export function resolveEntity(db, text, previous=null, {ignore=[]}={}) {
   const normalized=normalize(text);
   const candidates=[];
-  for(const name of entityCatalog(db))if(wordBoundary(name).test(normalized))candidates.push({id:name,source:'known-name',score:name.length});
+  // Palavras que, na consulta atual, são a propriedade pedida (ex.: 'capital')
+  // não podem ser escolhidas como a entidade consultada.
+  for(const name of entityCatalog(db))if(!ignore.includes(name)&&wordBoundary(name).test(normalized))candidates.push({id:name,source:'known-name',score:name.length});
   for(const {phrase:alias,canonical:name} of getLexicon(db,'entity_alias'))if(wordBoundary(alias).test(normalized))candidates.push({id:name,source:'uf-alias',score:alias.length+1});
   // 'Rio' pode ser estado ou cidade. Solicitar contexto quando for relevante.
   if(wordBoundary('rio').test(normalized) && !wordBoundary('rio de janeiro').test(normalized))
@@ -80,7 +82,7 @@ export function resolveEntity(db, text, previous=null) {
     }
     return first;
   }
-  return previous?.entity ? {id:previous.entity,source:'conversation-context',score:0} : null;
+  return previous?.entity && !ignore.includes(previous.entity) ? {id:previous.entity,source:'conversation-context',score:0} : null;
 }
 
 function socialIntents(db,normalized){return socialIntentsFromDb(db,normalized);}
@@ -134,9 +136,9 @@ export function saveSemanticState(db,conversationId,state) {
 export function understandAndPlan(db,text,previous=null,neuralIntent=null) {
   const {normalized:q,corrections}=normalizeSemanticText(text,db);
   const social=socialIntents(db,q);
-  const entity=resolveEntity(db,q,previous);
-  const trimmed=q.replace(/^(?:oi|ola|opa|bom dia|boa tarde|boa noite)[, ]*/,'').trim();
   const hasCapital=/\bcapital\b/.test(q) && !/\b(?:violento|violenta|seguro|segura|rica|rico|grande|pequena)\b/.test(q) && !/^(?:somente|apenas|so)\b/.test(q);
+  const entity=resolveEntity(db,q,previous,{ignore:hasCapital?['capital']:[]});
+  const trimmed=q.replace(/^(?:oi|ola|opa|bom dia|boa tarde|boa noite)[, ]*/,'').trim();
   const hasRank=isRanking(q);
   const hasLocation=/\b(?:fica|localizado|localizada|situa|situado|situada)\b/.test(q) && /\b(?:norte|nordeste|sul|sudeste|centro oeste)\b/.test(q);
   const short=contextualShort(q);

@@ -170,11 +170,18 @@ function executeChatMessage(db, payload) {
     if (id && !getConversation(db,id)) throw Object.assign(new Error('Conversa não encontrada.'),{status:404});
     const history = id ? conversationHistory(db,id) : [];
     const priorFocus=getConversationFocus(db,id);
-    const focusResolution=prepareFocus(db,text,id);
-    if(focusResolution?.query)text=focusResolution.query;
-    const normalized = normalize(text);
     const awaitingTeaching = pendingTeachingInvitation(history);
     const awaitingExplanation = awaitingTeachingExplanation(history);
+    // Depois de um convite para ensinar, uma afirmação substantiva (sem '?') é o
+    // próprio ensinamento: não pode ser reescrita pelo foco como nova consulta
+    // (ex.: 'A capital da Mongólia é Ulan Bator.' virava 'Qual capital de capital?').
+    const rawNormalized = normalize(text);
+    const teachingStatement = (awaitingTeaching || awaitingExplanation) && !text.includes('?')
+        && !teachingRefusal.test(rawNormalized) && !acceptsTeachingInvitation(text)
+        && isSubstantiveTeaching(text, rawNormalized);
+    const focusResolution=teachingStatement ? null : prepareFocus(db,text,id);
+    if(focusResolution?.query)text=focusResolution.query;
+    const normalized = normalize(text);
     const awaitingRating = pendingRating(history);
     let result = focusResolution?.result??null;
     const neuralIntent = classifyIntent(db,text);
@@ -302,7 +309,11 @@ function executeChatMessage(db, payload) {
     const contextFilter=/^(?:em|por) (?:extensao|area|populacao|pib)$|^(?:e )?em 20\d{2}$|^(?:somente as capitais|do nordeste)$/.test(normalized);
     const newIntent = isNewConversationalIntent(db,text,APPLICATION_VERSION)
         || (neuralRoute !== null && ['greeting','temporal','location','knowledge'].includes(neuralRoute));
-    const teachingResponse = !result && !newIntent && !contextFilter && (awaitingExplanation || awaitingTeaching)
+    // Uma afirmação de ensino que os motores semânticos só trataram como lacuna
+    // de dados (ex.: contém 'capital') segue para o fluxo de ensino.
+    const gapOverridable = teachingStatement && /(?:data-gap|^unknown$)/.test(result?.kind ?? '');
+    if (gapOverridable) result = null;
+    const teachingResponse = !result && (!newIntent || gapOverridable) && !contextFilter && (awaitingExplanation || awaitingTeaching)
         && !teachingRefusal.test(normalized)
         && !acceptsTeachingInvitation(text)
         && isSubstantiveTeaching(text,normalized);
